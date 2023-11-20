@@ -56,12 +56,14 @@ describe('ModelSelect', () => {
   it('selecting an option updates model ID', () => {
     const actions = {
       setInferencePipelineConfiguration: jest.fn(),
-    }
+    };
     setMockActions(actions);
     const wrapper = mount(<ModelSelect />);
     wrapper.find(ModelSelectOption).at(0).simulate('click');
-    expect(actions.setInferencePipelineConfiguration).toHaveBeenCalledWith(expect.objectContaining({
-      modelID: 'model_1',
-    }));
+    expect(actions.setInferencePipelineConfiguration).toHaveBeenCalledWith(
+      expect.objectContaining({
+        modelID: 'model_1',
+      })
+    );
   });
 });
