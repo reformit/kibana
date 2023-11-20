@@ -47,22 +47,20 @@ export const ModelSelect: React.FC = () => {
   };
 
   return (
-    <>
-      <EuiSelectable
-        options={getSelectableModels(supportedMLModels)}
-        singleSelection="always"
-        listProps={{
-          bordered: true,
-          rowHeight: 60,
-          showIcons: false,
-          onFocusBadge: false,
-        }}
-        onChange={onChange}
-        renderOption={renderIndexOption}
-        height={180}
-      >
-        {(list) => list}
-      </EuiSelectable>
-    </>
+    <EuiSelectable
+      options={getSelectableModels(supportedMLModels)}
+      singleSelection="always"
+      listProps={{
+        bordered: true,
+        rowHeight: 60,
+        showIcons: false,
+        onFocusBadge: false,
+      }}
+      onChange={onChange}
+      renderOption={renderIndexOption}
+      height={180}
+    >
+      {(list) => list}
+    </EuiSelectable>
   );
 };
