@@ -16,7 +16,5 @@
     "index.ts",
     "typings.ts"
   ],
-  "references": [
-    { "path": "../test_utils/" }
-  ]
+  "references": [{ "path": "../test_utils/" }]
 }

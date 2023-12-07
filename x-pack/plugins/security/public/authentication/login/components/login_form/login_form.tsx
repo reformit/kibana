@@ -186,6 +186,7 @@ export class LoginForm extends Component<Props, State> {
       <EuiPanel data-test-subj="loginForm">
         <form onSubmit={this.submitLoginForm}>
           <EuiFormRow
+            className="derby-row"
             label={
               <FormattedMessage
                 id="xpack.security.login.basicLoginForm.usernameFormRowLabel"
@@ -204,10 +205,12 @@ export class LoginForm extends Component<Props, State> {
               isInvalid={false}
               aria-required={true}
               inputRef={this.setUsernameInputRef}
+              className="derby-input-field"
             />
           </EuiFormRow>
 
           <EuiFormRow
+            className="derby-row"
             label={
               <FormattedMessage
                 id="xpack.security.login.basicLoginForm.passwordFormRowLabel"
@@ -227,6 +230,7 @@ export class LoginForm extends Component<Props, State> {
               disabled={!this.isLoadingState(LoadingStateType.None)}
               isInvalid={false}
               aria-required={true}
+              className="derby-input-field"
             />
           </EuiFormRow>
 
@@ -242,6 +246,7 @@ export class LoginForm extends Component<Props, State> {
                 isDisabled={!this.isLoadingState(LoadingStateType.None)}
                 isLoading={this.isLoadingState(LoadingStateType.Form)}
                 data-test-subj="loginSubmit"
+                className="derby-custom-button"
               >
                 <FormattedMessage
                   id="xpack.security.login.basicLoginForm.logInButtonLabel"

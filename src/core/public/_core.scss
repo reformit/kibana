@@ -7,3 +7,77 @@
   min-width: 100%;
   min-height: 100%;
 }
+
+/************************************
+ * DERBY CUSTOM STYLES
+ ************************************/
+@import '../../../scss/derby_variables.scss';
+/*
+* Hide the entire help menu dropdown. Let 'em use direct links to elastic
+*/
+#headerHelpMenu {
+  display: none;
+}
+
+.euiButton--primary {
+  color: $primary-color;
+  border-color: $primary-color;
+}
+
+.euiButton--primary.euiButton--fill:enabled:hover,
+.euiButton--primary.euiButton--fill:enabled:focus {
+  background-color: transparent;
+  border-color: $primary-color;
+  color: $primary-color;
+}
+
+.euiButton--primary.euiButton--fill {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: #fff;
+}
+
+.euiButtonEmpty--primary {
+  color: $primary-color;
+}
+
+.euiLink.euiLink--primary {
+  color: $primary-color;
+}
+
+.euiLink.euiLink--primary:hover,
+.euiLink.euiLink--primary:focus {
+  color: $secondary-color;
+}
+
+// .euiButtonIcon--primary:hover,
+// .euiButtonIcon--primary:hover {
+//   color: $secondary-color;
+// }
+
+.euiButton--secondary {
+  background-color: $primary-color;
+}
+
+.euiSuperDatePicker__prettyFormatLink {
+  color: $primary-color;
+}
+
+/* Hide the contents of the SVG logos */
+.euwHeaderLogo__icon g,
+.loginWelcome__logo .euiIcon {
+  display: none;
+  visibility: hidden;
+}
+
+.euiTab.euiTab-isSelected {
+  color: $primary-color;
+}
+
+.euiTab.euiTab-isSelected::after {
+  background-color: $primary-color;
+}
+
+/********************************
+ * UNCONFIRMED
+ ********************************/

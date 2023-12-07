@@ -44,6 +44,10 @@ RUN find /usr/share/kibana -type d -exec chmod g+s {} \;
 FROM {{{baseOSImage}}}
 EXPOSE 5601
 
+RUN cd /etc/yum.repos.d/
+RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+
 {{#ubi}}
   # https://github.com/rpm-software-management/microdnf/issues/50
   RUN mkdir -p /run/user/$(id -u)

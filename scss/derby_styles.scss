@@ -1,0 +1,47 @@
+@import './derby_variables.scss';
+
+.derby-custom-button {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+}
+
+.derby-input-field:focus {
+  background-image: linear-gradient(
+    to top,
+    $primary-color,
+    $primary-color 2px,
+    transparent 2px,
+    transparent 100%
+  ) !important;
+}
+
+.derby-row label.euiFormLabel-isFocused {
+  color: $primary-color !important;
+}
+
+.derby-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600 !important;
+}
+
+.derby-logo:focus {
+  outline: none !important;
+}
+
+.derby-logo img {
+  padding: 4px;
+}
+
+.derby-logo span {
+  font-weight: 500;
+}
+
+.derbyLoginWelcome__title {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.derbyLoginWelcome__subtitle {
+  font-weight: 300;
+}
