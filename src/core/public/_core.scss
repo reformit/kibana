@@ -19,9 +19,27 @@
   display: none;
 }
 
+.euiSideNavItemButton.euiSideNavItemButton-isSelected .euiSideNavItemButton__label {
+  color: $secondary-color;
+}
+
 .euiButton--primary {
   color: $primary-color;
   border-color: $primary-color;
+}
+
+.euiFieldSearch:focus {
+  background-image: linear-gradient(
+    to top,
+    $secondary-color,
+    $secondary-color 2px,
+    transparent 2px,
+    transparent 100%
+  );
+}
+
+.euiSwitch .euiSwitch__body {
+  background-color: $secondary-color;
 }
 
 .euiButton--primary.euiButton--fill:enabled:hover,
@@ -37,8 +55,18 @@
   color: #fff;
 }
 
-.euiButtonEmpty--primary {
+.euiButtonEmpty--primary,
+.euiButtonEmpty__text {
   color: $primary-color;
+}
+
+.euiTableHeaderButton:hover .euiTableCellContent__text,
+.euiTableHeaderButton:focus .euiTableCellContent__text {
+  color: $primary-color;
+}
+
+.euiPaginationButton-isActive.euiPaginationButton-isActive {
+  color: $secondary-color;
 }
 
 .euiLink.euiLink--primary {
@@ -50,10 +78,13 @@
   color: $secondary-color;
 }
 
-// .euiButtonIcon--primary:hover,
-// .euiButtonIcon--primary:hover {
-//   color: $secondary-color;
-// }
+.euiTableHeaderButton:hover .euiTableSortIcon,
+.euiTableHeaderButton:focus .euiTableSortIcon {
+  fill: $secondary-color;
+}
+.euiButtonIcon--primary {
+  color: $primary-color;
+}
 
 .euiButton--secondary {
   background-color: $primary-color;
@@ -76,6 +107,83 @@
 
 .euiTab.euiTab-isSelected::after {
   background-color: $primary-color;
+}
+
+.euiButton--primary {
+  color: $secondary-color;
+  border-color: $secondary-color;
+  background-color: rgba($color: $secondary-color, $alpha: 0.25);
+}
+
+.euiButton--primary:enabled:hover,
+.euiButton--primary:enabled:focus {
+  background-color: $secondary-color;
+  color: white;
+}
+
+.euiButton--secondary.euiButton--fill {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: white;
+}
+
+.euiDatePopoverButton:focus,
+.euiDatePopoverButton-isSelected {
+  background-image: linear-gradient(
+    to top,
+    $secondary-color,
+    $secondary-color 2px,
+    transparent 2px,
+    transparent 100%
+  );
+}
+
+.euiFieldNumber--compressed:focus,
+.euiFieldNumber:focus,
+.euiSelect--compressed:focus,
+.euiSelect:focus {
+  background-image: linear-gradient(
+    to top,
+    $secondary-color,
+    $secondary-color 2px,
+    transparent 2px,
+    transparent 100%
+  ) !important;
+}
+
+.react-datepicker__day--selected:hover {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.react-datepicker__year-read-view:hover,
+.react-datepicker__month-read-view:hover,
+.react-datepicker__month-year-read-view:hover {
+  color: $secondary-color;
+}
+
+.react-datepicker__day--today {
+  color: $secondary-color;
+}
+
+.react-datepicker__year-option--selected_year,
+.react-datepicker__month-option--selected_month,
+.react-datepicker__time-list-item--selected {
+  background: $secondary-color !important;
+  color: white !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  color: white;
+}
+
+.euiButton--secondary.euiButton--fill:enabled:hover,
+.euiButton--secondary.euiButton--fill:enabled:focus {
+  background-color: transparent;
+  color: $primary-color;
+  border-color: $primary-color;
 }
 
 /********************************
