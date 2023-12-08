@@ -261,10 +261,16 @@ export function CollapsibleNav({
         {orderedCategories.map((categoryName) => {
           const category = categoryDictionary[categoryName]!;
 
+          // DERBY: Changed Kibana Label to prism
+          if (category.id === 'kibana') {
+            category.label = 'PRISM';
+          }
+
+          // DERBY: Removed the display of all product icons in the sidebar
           return (
             <EuiCollapsibleNavGroup
               key={category.id}
-              iconType={category.euiIconType}
+              iconType={undefined}
               title={category.label}
               isCollapsible={true}
               initialIsOpen={getIsCategoryOpen(category.id, storage)}
