@@ -258,7 +258,7 @@ export function CollapsibleNav({
 
       <EuiFlexItem className="eui-yScroll">
         {/* Kibana, Observability, Security, and Management sections */}
-        {console.log(orderedCategories)}
+
         {orderedCategories.map((categoryName) => {
           const category = categoryDictionary[categoryName]!;
 
