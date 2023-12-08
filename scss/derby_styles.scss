@@ -3,20 +3,27 @@
 .derby-custom-button {
   background-color: $primary-color !important;
   border-color: $primary-color !important;
+  color: white;
+}
+
+.derby-custom-button:hover,
+.derby-custom-button:focus {
+  background-color: transparent !important;
+  color: $primary-color;
 }
 
 .derby-input-field:focus {
   background-image: linear-gradient(
     to top,
-    $primary-color,
-    $primary-color 2px,
+    $secondary-color,
+    $secondary-color 2px,
     transparent 2px,
     transparent 100%
   ) !important;
 }
 
 .derby-row label.euiFormLabel-isFocused {
-  color: $primary-color !important;
+  color: $secondary-color !important;
 }
 
 .derby-logo {
