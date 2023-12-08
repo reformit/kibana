@@ -86,10 +86,6 @@
   color: $primary-color;
 }
 
-.euiButton--secondary {
-  background-color: $primary-color;
-}
-
 .euiSuperDatePicker__prettyFormatLink {
   color: $primary-color;
 }
@@ -118,12 +114,6 @@
 .euiButton--primary:enabled:hover,
 .euiButton--primary:enabled:focus {
   background-color: $secondary-color;
-  color: white;
-}
-
-.euiButton--secondary.euiButton--fill {
-  background-color: $primary-color;
-  border-color: $primary-color;
   color: white;
 }
 
@@ -179,11 +169,50 @@
   color: white;
 }
 
-.euiButton--secondary.euiButton--fill:enabled:hover,
-.euiButton--secondary.euiButton--fill:enabled:focus {
-  background-color: transparent;
+.euiListGroupItem-isActive {
+  background-color: rgba($color: $secondary-color, $alpha: 0.25) !important;
+}
+
+.euiFieldText:focus,
+.euiTextArea:focus,
+.euiComboBox.euiComboBox-isOpen .euiComboBox__inputWrap,
+.euiSuperSelectControl--compressed:focus,
+.euiSuperSelectControl--compressed:hover {
+  background-image: linear-gradient(
+    to top,
+    $secondary-color,
+    $secondary-color 2px,
+    transparent 2px,
+    transparent 100%
+  );
+}
+
+.euiFormLabel-isFocused {
+  color: $secondary-color !important;
+}
+
+.euiFilterSelectItem:focus,
+.euiFilterSelectItem-isFocused {
   color: $primary-color;
-  border-color: $primary-color;
+}
+
+.euiToast--success {
+  border-top: 2px solid $primary-color;
+}
+
+.euiRadio .euiRadio__input:checked + .euiRadio__circle,
+.euiCheckbox .euiCheckbox__input:checked + .euiCheckbox__square {
+  border-color: $secondary-color;
+  background-color: $secondary-color;
+}
+
+.dscFieldSearch__toggleButton {
+  color: $primary-color !important;
+}
+
+.euiSelectableListItem-isFocused:not([aria-disabled='true']),
+.euiSelectableListItem:hover:not([aria-disabled='true']) {
+  color: $primary-color;
 }
 
 /********************************
