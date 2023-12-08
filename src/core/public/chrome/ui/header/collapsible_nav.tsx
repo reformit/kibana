@@ -258,40 +258,50 @@ export function CollapsibleNav({
 
       <EuiFlexItem className="eui-yScroll">
         {/* Kibana, Observability, Security, and Management sections */}
+        {console.log(orderedCategories)}
         {orderedCategories.map((categoryName) => {
           const category = categoryDictionary[categoryName]!;
 
           // DERBY: Changed Kibana Label to prism
           if (category.id === 'kibana') {
             category.label = 'PRISM';
+
+            const idsToRemove = ['kibanaOverview', 'ml'];
+
+            allCategorizedLinks[categoryName] = allCategorizedLinks[categoryName].filter(
+              (item) => !idsToRemove.includes(item.id)
+            );
           }
 
           // DERBY: Removed the display of all product icons in the sidebar
-          return (
-            <EuiCollapsibleNavGroup
-              key={category.id}
-              iconType={undefined}
-              title={category.label}
-              isCollapsible={true}
-              initialIsOpen={getIsCategoryOpen(category.id, storage)}
-              onToggle={(isCategoryOpen) => setIsCategoryOpen(category.id, isCategoryOpen, storage)}
-              data-test-subj={`collapsibleNavGroup-${category.id}`}
-            >
-              <EuiListGroup
-                aria-label={i18n.translate('core.ui.primaryNavSection.screenReaderLabel', {
-                  defaultMessage: 'Primary navigation links, {category}',
-                  values: { category: category.label },
-                })}
-                listItems={allCategorizedLinks[categoryName].map((link) => readyForEUI(link))}
-                maxWidth="none"
-                color="subdued"
-                gutterSize="none"
-                size="s"
-              />
-            </EuiCollapsibleNavGroup>
-          );
+          if (category.id !== 'enterpriseSearch') {
+            return (
+              <EuiCollapsibleNavGroup
+                key={category.id}
+                iconType={undefined}
+                title={category.label}
+                isCollapsible={true}
+                initialIsOpen={getIsCategoryOpen(category.id, storage)}
+                onToggle={(isCategoryOpen) =>
+                  setIsCategoryOpen(category.id, isCategoryOpen, storage)
+                }
+                data-test-subj={`collapsibleNavGroup-${category.id}`}
+              >
+                <EuiListGroup
+                  aria-label={i18n.translate('core.ui.primaryNavSection.screenReaderLabel', {
+                    defaultMessage: 'Primary navigation links, {category}',
+                    values: { category: category.label },
+                  })}
+                  listItems={allCategorizedLinks[categoryName].map((link) => readyForEUI(link))}
+                  maxWidth="none"
+                  color="subdued"
+                  gutterSize="none"
+                  size="s"
+                />
+              </EuiCollapsibleNavGroup>
+            );
+          }
         })}
-
         {/* Things with no category (largely for custom plugins) */}
         {unknowns.map((link, i) => (
           <EuiCollapsibleNavGroup data-test-subj={`collapsibleNavGroup-noCategory`} key={i}>
@@ -300,7 +310,6 @@ export function CollapsibleNav({
             </EuiListGroup>
           </EuiCollapsibleNavGroup>
         ))}
-
         {/* Docking button only for larger screens that can support it*/}
         <EuiShowFor sizes={['l', 'xl']}>
           <EuiCollapsibleNavGroup>
