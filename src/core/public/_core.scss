@@ -177,7 +177,8 @@
 .euiTextArea:focus,
 .euiComboBox.euiComboBox-isOpen .euiComboBox__inputWrap,
 .euiSuperSelectControl--compressed:focus,
-.euiSuperSelectControl--compressed:hover {
+.euiSuperSelectControl--compressed:hover,
+.euiFieldPassword:focus {
   background-image: linear-gradient(
     to top,
     $secondary-color,
@@ -213,6 +214,17 @@
 .euiSelectableListItem-isFocused:not([aria-disabled='true']),
 .euiSelectableListItem:hover:not([aria-disabled='true']) {
   color: $primary-color;
+}
+.euiListGroupItem__button {
+  color: $primary-color;
+}
+
+.conApp__editorActionButton--success {
+  color: $secondary-color !important;
+}
+
+.euiTab:focus {
+  background-color: rgba($color: $secondary-color, $alpha: 0.1);
 }
 
 /********************************

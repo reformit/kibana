@@ -48,7 +48,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
         await PageObjects.security.logout();
 
         const logoutMessage = await testSubjects.getVisibleText('loginInfoMessage');
-        expect(logoutMessage).to.eql('You have logged out of Elastic.');
+        expect(logoutMessage).to.eql('You have logged out of PRISM.');
       });
 
       describe('within a non-default space', async () => {
