@@ -27,6 +27,9 @@
   @include euiBreakpoint('xs', 's') {
     flex-direction: column;
   }
+
+  //DERBY
+  margin-bottom: 1em;
 }
 
 .homSolutions__group {

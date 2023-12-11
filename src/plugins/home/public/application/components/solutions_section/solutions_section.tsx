@@ -45,7 +45,9 @@ export const SolutionsSection: FC<Props> = ({ addBasePath, solutions, directorie
 
   return (
     <>
-      <section aria-labelledby="homSolutions__title" className="homSolutions">
+      {
+        // DERBY Removed
+        /* <section aria-labelledby="homSolutions__title" className="homSolutions">
         <EuiScreenReaderOnly>
           <h2 id="homSolutions__title">
             <FormattedMessage
@@ -73,9 +75,13 @@ export const SolutionsSection: FC<Props> = ({ addBasePath, solutions, directorie
             />
           ) : null}
         </EuiFlexGroup>
-      </section>
+      </section> */
+      }
 
-      <EuiHorizontalRule margin="xl" aria-hidden="true" />
+      {
+        // DERBY Removed
+        /* <EuiHorizontalRule margin="xl" aria-hidden="true" /> */
+      }
     </>
   );
 };
