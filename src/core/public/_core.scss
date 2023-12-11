@@ -188,6 +188,25 @@
   );
 }
 
+.euiFilePicker__showDrop .euiFilePicker__prompt,
+.euiFilePicker__input:focus + .euiFilePicker__prompt {
+  background-image: linear-gradient(
+    to top,
+    $secondary-color,
+    $secondary-color 2px,
+    transparent 2px,
+    transparent 100%
+  );
+}
+
+.euiCheckableCard:not(.euiCheckableCard-isDisabled).euiCheckableCard-isChecked {
+  border-color: $secondary-color;
+}
+
+.euiCheckableCard-isChecked .euiCheckableCard__control {
+  background-color: rgba($color: $secondary-color, $alpha: 0.25);
+}
+
 .euiFormLabel-isFocused {
   color: $secondary-color !important;
 }
