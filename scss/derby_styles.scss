@@ -12,6 +12,10 @@
   color: $primary-color;
 }
 
+.derby-custom-button.euiButton:disabled.euiButton--fill {
+  color: white;
+}
+
 .derby-input-field:focus {
   background-image: linear-gradient(
     to top,
