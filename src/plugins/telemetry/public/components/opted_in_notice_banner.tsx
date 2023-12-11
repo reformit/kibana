@@ -33,46 +33,48 @@ export class OptedInNoticeBanner extends React.PureComponent<Props> {
   render() {
     const { onSeenBanner } = this.props;
     const bannerTitle = i18n.translate('telemetry.telemetryOptedInNoticeTitle', {
-      defaultMessage: 'Help us improve the Elastic Stack',
+      defaultMessage: 'Help us improve the Elastic Stack 2',
     });
 
     return (
-      <EuiCallOut title={bannerTitle}>
-        <FormattedMessage
-          id="telemetry.telemetryOptedInNoticeDescription"
-          defaultMessage="To learn about how usage data helps us manage and improve our products and services, see our {privacyStatementLink}. To stop collection, {disableLink}."
-          values={{
-            privacyStatementLink: (
-              <EuiLink
-                onClick={onSeenBanner}
-                href={PRIVACY_STATEMENT_URL}
-                target="_blank"
-                rel="noopener"
-              >
-                <FormattedMessage
-                  id="telemetry.telemetryOptedInPrivacyStatement"
-                  defaultMessage="Privacy Statement"
-                />
-              </EuiLink>
-            ),
-            disableLink: (
-              <EuiLink href={PATH_TO_ADVANCED_SETTINGS} onClick={onSeenBanner}>
-                <FormattedMessage
-                  id="telemetry.telemetryOptedInDisableUsage"
-                  defaultMessage="disable usage data here"
-                />
-              </EuiLink>
-            ),
-          }}
-        />
-        <EuiSpacer size="s" />
-        <EuiButton size="s" onClick={onSeenBanner}>
-          <FormattedMessage
-            id="telemetry.telemetryOptedInDismissMessage"
-            defaultMessage="Dismiss"
-          />
-        </EuiButton>
-      </EuiCallOut>
+      // DERBY: Removed Elastic Usage Data Alert on first login.
+      <div />
+      // <EuiCallOut title={bannerTitle}>
+      //   <FormattedMessage
+      //     id="telemetry.telemetryOptedInNoticeDescription"
+      //     defaultMessage="To learn about how usage data helps us manage and improve our products and services, see our {privacyStatementLink}. To stop collection, {disableLink}."
+      //     values={{
+      //       privacyStatementLink: (
+      //         <EuiLink
+      //           onClick={onSeenBanner}
+      //           href={PRIVACY_STATEMENT_URL}
+      //           target="_blank"
+      //           rel="noopener"
+      //         >
+      //           <FormattedMessage
+      //             id="telemetry.telemetryOptedInPrivacyStatement"
+      //             defaultMessage="Privacy Statement"
+      //           />
+      //         </EuiLink>
+      //       ),
+      //       disableLink: (
+      //         <EuiLink href={PATH_TO_ADVANCED_SETTINGS} onClick={onSeenBanner}>
+      //           <FormattedMessage
+      //             id="telemetry.telemetryOptedInDisableUsage"
+      //             defaultMessage="disable usage data here"
+      //           />
+      //         </EuiLink>
+      //       ),
+      //     }}
+      //   />
+      //   <EuiSpacer size="s" />
+      //   <EuiButton size="s" onClick={onSeenBanner}>
+      //     <FormattedMessage
+      //       id="telemetry.telemetryOptedInDismissMessage"
+      //       defaultMessage="Dismiss"
+      //     />
+      //   </EuiButton>
+      // </EuiCallOut>
     );
   }
 }
