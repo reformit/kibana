@@ -246,6 +246,10 @@
   background-color: rgba($color: $secondary-color, $alpha: 0.1);
 }
 
+.savedObjectsManagementImportSummary__createdCount,
+.euiIcon--success {
+  color: $secondary-color !important;
+}
 /********************************
  * UNCONFIRMED
  ********************************/
