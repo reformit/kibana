@@ -19,7 +19,7 @@ export const registerFeature = (home: HomePublicPluginSetup) => {
     }),
     description: i18n.translate('xpack.transform.transformsDescription', {
       defaultMessage:
-        'Use transforms to pivot existing Elasticsearch indices into summarized or entity-centric indices.',
+        'Use transforms to pivot existing PRISM indices into summarized or entity-centric indices.',
     }),
     icon: 'managementApp', // there is currently no Transforms icon, so using the general management app icon
     path: '/app/management/data/transform',

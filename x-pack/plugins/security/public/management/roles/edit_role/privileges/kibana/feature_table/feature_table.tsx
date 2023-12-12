@@ -73,7 +73,6 @@ export class FeatureTable extends Component<Props, {}> {
     const accordions: Array<{ order: number; element: ReactElement }> = [];
     this.featureCategories.forEach((featuresInCategory) => {
       const { category } = featuresInCategory[0];
-
       const featureCount = featuresInCategory.length;
       const grantedCount = featuresInCategory.filter(
         (feature) =>
@@ -94,12 +93,14 @@ export class FeatureTable extends Component<Props, {}> {
         >
           {category.euiIconType ? (
             <EuiFlexItem grow={false}>
-              <EuiIcon size="m" type={category.euiIconType} />
+              {/* <EuiIcon size="m" type={category.euiIconType} /> */}
             </EuiFlexItem>
           ) : null}
           <EuiFlexItem grow={1}>
             <EuiTitle size="xs">
-              <h4 className="eui-displayInlineBlock">{category.label}</h4>
+              <h4 className="eui-displayInlineBlock">
+                {category.id !== 'kibana' ? category.label : 'PRISM'}
+              </h4>
             </EuiTitle>
           </EuiFlexItem>
         </EuiFlexGroup>

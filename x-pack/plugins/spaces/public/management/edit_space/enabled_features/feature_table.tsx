@@ -102,12 +102,14 @@ export class FeatureTable extends Component<Props, {}> {
           </EuiFlexItem>
           {category.euiIconType ? (
             <EuiFlexItem grow={false}>
-              <EuiIcon size="m" type={category.euiIconType} />
+              {/* <EuiIcon size="m" type={category.euiIconType} /> */}
             </EuiFlexItem>
           ) : null}
           <EuiFlexItem grow={1}>
             <EuiTitle size="xs">
-              <h4 className="eui-displayInlineBlock">{category.label}</h4>
+              <h4 className="eui-displayInlineBlock">
+                {category.id !== 'kibana' ? category.label : 'PRISM'}
+              </h4>
             </EuiTitle>
           </EuiFlexItem>
         </EuiFlexGroup>

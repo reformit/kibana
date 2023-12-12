@@ -500,7 +500,7 @@ export class IndexTable extends Component {
                   <EuiText color="subdued">
                     <FormattedMessage
                       id="xpack.idxMgmt.home.idxMgmtDescription"
-                      defaultMessage="Update your Elasticsearch indices individually or in bulk. {learnMoreLink}"
+                      defaultMessage="Update your PRISM indices individually or in bulk. {learnMoreLink}"
                       values={{
                         learnMoreLink: (
                           <EuiLink

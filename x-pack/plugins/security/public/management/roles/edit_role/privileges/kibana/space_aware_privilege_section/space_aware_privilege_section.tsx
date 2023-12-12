@@ -170,7 +170,7 @@ export class SpaceAwarePrivilegeSection extends Component<Props, State> {
           <h2>
             <FormattedMessage
               id="xpack.security.management.editRole.spacePrivilegeSection.noAccessToKibanaTitle"
-              defaultMessage="This role does not grant access to Kibana"
+              defaultMessage="This role does not grant access to PRISM"
             />
           </h2>
         }
@@ -198,7 +198,7 @@ export class SpaceAwarePrivilegeSection extends Component<Props, State> {
       >
         <FormattedMessage
           id="xpack.security.management.editRole.spacePrivilegeSection.addSpacePrivilegeButton"
-          defaultMessage="Add Kibana privilege"
+          defaultMessage="Add PRISM privilege"
         />
       </EuiButton>
     );

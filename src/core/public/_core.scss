@@ -250,6 +250,23 @@
 .euiIcon--success {
   color: $secondary-color !important;
 }
+
+.euiButtonToggle__input:enabled:hover + .euiButtonToggle[class*='primary'],
+.euiButtonToggle__input:enabled:focus + .euiButtonToggle[class*='primary'],
+.euiButtonToggle__input:enabled:active + .euiButtonToggle[class*='primary'] {
+  background-color: #1d1e24;
+}
+
+.euiToggle--checked .euiButtonToggle__input:enabled:hover + .euiButtonToggle[class*='primary'],
+.euiToggle--checked .euiButtonToggle__input:enabled:focus + .euiButtonToggle[class*='primary'],
+.euiToggle--checked .euiButtonToggle__input:enabled:active + .euiButtonToggle[class*='primary'] {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.euiBasicTable-loading tbody:before {
+  background-color: $secondary-color !important;
+}
 /********************************
  * UNCONFIRMED
  ********************************/

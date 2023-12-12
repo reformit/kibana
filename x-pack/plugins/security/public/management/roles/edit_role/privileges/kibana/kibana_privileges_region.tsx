@@ -30,7 +30,7 @@ interface Props {
 export class KibanaPrivilegesRegion extends Component<Props, {}> {
   public render() {
     return (
-      <CollapsiblePanel iconType={'logoKibana'} title={'Kibana'}>
+      <CollapsiblePanel iconType={''} title={'PRISM'}>
         {this.getForm()}
       </CollapsiblePanel>
     );

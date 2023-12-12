@@ -131,7 +131,7 @@ export const SnapshotRestoreHome: React.FunctionComponent<RouteComponentProps<Ma
           <EuiText color="subdued">
             <FormattedMessage
               id="xpack.snapshotRestore.home.snapshotRestoreDescription"
-              defaultMessage="Use repositories to store and recover backups of your Elasticsearch indices and clusters."
+              defaultMessage="Use repositories to store and recover backups of your PRISM indices and clusters."
             />
           </EuiText>
         </EuiTitle>

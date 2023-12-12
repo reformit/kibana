@@ -154,7 +154,7 @@ class ReportListingUi extends Component<Props, State> {
                 <p>
                   <FormattedMessage
                     id="xpack.reporting.listing.reports.subtitle"
-                    defaultMessage="Get reports generated in Kibana applications."
+                    defaultMessage="Get reports generated in PRISM applications."
                   />
                 </p>
               </EuiText>

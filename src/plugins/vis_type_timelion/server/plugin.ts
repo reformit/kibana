@@ -111,7 +111,7 @@ export class Plugin {
         }),
         value: '_all',
         description: i18n.translate('timelion.uiSettings.defaultIndexDescription', {
-          defaultMessage: 'Default elasticsearch index to search with {esParam}',
+          defaultMessage: 'Default index to search with {esParam}', // DERBY removed elasticsearch
           values: { esParam: '.es()' },
         }),
         category: ['timelion'],

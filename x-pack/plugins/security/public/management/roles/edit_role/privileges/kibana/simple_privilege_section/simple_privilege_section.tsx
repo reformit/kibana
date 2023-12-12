@@ -57,7 +57,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
     const title = (
       <FormattedMessage
         id="xpack.security.management.editRole.simplePrivilegeForm.kibanaPrivilegesTitle"
-        defaultMessage="Kibana privileges"
+        defaultMessage="PRISM privileges"
       />
     );
 
@@ -65,7 +65,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
       <p>
         <FormattedMessage
           id="xpack.security.management.editRole.simplePrivilegeForm.specifyPrivilegeForRoleDescription"
-          defaultMessage="Specifies the Kibana privilege for this role."
+          defaultMessage="Specifies the PRISM privilege for this role."
         />
       </p>
     );
@@ -112,7 +112,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
                           <p>
                             <FormattedMessage
                               id="xpack.security.management.editRole.simplePrivilegeForm.noPrivilegeDropdownDescription"
-                              defaultMessage="No access to Kibana"
+                              defaultMessage="No access to PRISM"
                             />
                           </p>
                         </EuiText>
@@ -139,7 +139,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
                           <p>
                             <FormattedMessage
                               id="xpack.security.management.editRole.simplePrivilegeForm.customPrivilegeDropdownDescription"
-                              defaultMessage="Customize access to Kibana"
+                              defaultMessage="Customize access to PRISM"
                             />
                           </p>
                         </EuiText>
@@ -166,7 +166,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
                           <p>
                             <FormattedMessage
                               id="xpack.security.management.editRole.simplePrivilegeForm.readPrivilegeDropdownDescription"
-                              defaultMessage="Grants read-only access to all of Kibana"
+                              defaultMessage="Grants read-only access to all of PRISM"
                             />
                           </p>
                         </EuiText>
@@ -193,7 +193,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
                           <p>
                             <FormattedMessage
                               id="xpack.security.management.editRole.simplePrivilegeForm.allPrivilegeDropdownDescription"
-                              defaultMessage="Grants full access to all of Kibana"
+                              defaultMessage="Grants full access to all of PRISM"
                             />
                           </p>
                         </EuiText>
