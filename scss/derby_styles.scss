@@ -67,6 +67,11 @@
   font-size: 1.25em;
 }
 
+/* Apply the animation to the "Loading ..." div */
+.derby-flashing-text {
+  animation: flash 0.5s infinite; /* Use 'flash' keyframes, 2 seconds duration, repeat infinitely */
+}
+
 @keyframes flash {
   0% {
     opacity: 0;
@@ -79,7 +84,18 @@
   } /* Back to 0 opacity */
 }
 
-/* Apply the animation to the "Loading ..." div */
-.derby-flashing-text {
-  animation: flash 0.5s infinite; /* Use 'flash' keyframes, 2 seconds duration, repeat infinitely */
+.derbyLoadingLogo {
+  animation: loadingLogo 2s infinite;
+}
+
+@keyframes loadingLogo {
+  0% {
+    opacity: 0;
+  } /* Start with 0 opacity (invisible) */
+  50% {
+    opacity: 1;
+  } /* Reach full opacity */
+  100% {
+    opacity: 0;
+  } /* Back to 0 opacity */
 }
