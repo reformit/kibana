@@ -267,6 +267,11 @@
 .euiBasicTable-loading tbody:before {
   background-color: $secondary-color !important;
 }
+
+button.euiHeaderSectionItem__button[data-test-subj='newsfeed'] {
+  display: none;
+}
+
 /********************************
  * UNCONFIRMED
  ********************************/
