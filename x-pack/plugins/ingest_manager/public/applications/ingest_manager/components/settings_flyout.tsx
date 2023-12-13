@@ -188,7 +188,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
               <h3>
                 <FormattedMessage
                   id="xpack.ingestManager.settings.autoUpgradeFieldLabel"
-                  defaultMessage="Elastic Agent binary version"
+                  defaultMessage="Agent binary version" // DERBY - Sanitized
                 />
               </h3>
             </EuiTitle>
@@ -247,14 +247,14 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
       <EuiText color="subdued" size="s">
         <FormattedMessage
           id="xpack.ingestManager.settings.globalOutputDescription"
-          defaultMessage="Specify where to send data. These settings are applied to all Elastic Agent policies."
+          defaultMessage="Specify where to send data. These settings are applied to all Agent policies." // DERBY - Sanitized
         />
       </EuiText>
       <EuiSpacer size="m" />
       <EuiFormRow>
         <EuiFormRow
           label={i18n.translate('xpack.ingestManager.settings.kibanaUrlLabel', {
-            defaultMessage: 'Kibana URL',
+            defaultMessage: 'PRISM URL',
           })}
           {...inputs.kibanaUrls.formRowProps}
         >
@@ -265,7 +265,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
       <EuiFormRow>
         <EuiFormRow
           label={i18n.translate('xpack.ingestManager.settings.elasticsearchUrlLabel', {
-            defaultMessage: 'Elasticsearch URL',
+            defaultMessage: 'Back end URL',
           })}
           {...inputs.elasticsearchUrl.formRowProps}
         >
@@ -277,7 +277,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
         <EuiFormRow
           {...inputs.additionalYamlConfig.formRowProps}
           label={i18n.translate('xpack.ingestManager.settings.additionalYamlConfig', {
-            defaultMessage: 'Elasticsearch output configuration',
+            defaultMessage: 'Output configuration',
           })}
           fullWidth={true}
         >

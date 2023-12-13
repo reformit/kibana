@@ -63,7 +63,7 @@ export const ManagedInstructions = React.memo<Props>(({ agentPolicies }) => {
       <EuiText>
         <FormattedMessage
           id="xpack.ingestManager.agentEnrollment.managedDescription"
-          defaultMessage="Enroll an Elastic Agent in Fleet to automatically deploy updates and centrally manage the agent."
+          defaultMessage="Enroll an Agent in Fleet to automatically deploy updates and centrally manage the agent." // DERBY - sanitized
         />
       </EuiText>
       <EuiSpacer size="l" />
@@ -81,7 +81,7 @@ export const ManagedInstructions = React.memo<Props>(({ agentPolicies }) => {
                 <EuiLink href={getHref('fleet')}>
                   <FormattedMessage
                     id="xpack.ingestManager.agentEnrollment.setUpAgentsLink"
-                    defaultMessage="set up central management for Elastic Agents"
+                    defaultMessage="set up central management for Agents" // DERBY - sanitized
                   />
                 </EuiLink>
               ),

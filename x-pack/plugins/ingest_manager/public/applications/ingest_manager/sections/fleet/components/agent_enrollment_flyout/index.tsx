@@ -50,7 +50,7 @@ export const AgentEnrollmentFlyout: React.FunctionComponent<Props> = ({
         <EuiText>
           <FormattedMessage
             id="xpack.ingestManager.agentEnrollment.agentDescription"
-            defaultMessage="Add Elastic Agents to your hosts to collect data and send it to the Elastic Stack."
+            defaultMessage="Add Agents to your hosts to collect data and send it to the back end." // DERBY - sanitized text
           />
         </EuiText>
         <EuiSpacer size="l" />

@@ -37,7 +37,7 @@ export const OverviewIntegrationSection: React.FC = () => {
         })}
         tooltip={i18n.translate('xpack.ingestManager.overviewPageIntegrationsPanelTooltip', {
           defaultMessage:
-            'Browse and install integrations for the Elastic Stack. Add integrations to your agent policies to start sending data.',
+            'Browse and install integrations. Add integrations to your agent policies to start sending data.', // DERBY removed 'Elastic Stack'
         })}
         linkTo={getHref('integrations_all')}
         linkToText={i18n.translate('xpack.ingestManager.overviewPageIntegrationsPanelAction', {

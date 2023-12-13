@@ -127,13 +127,13 @@ export const SetupPage: React.FunctionComponent<{
           >
             <FormattedMessage
               id="xpack.ingestManager.setupPage.missingRequirementsCalloutDescription"
-              defaultMessage="To use central management for Elastic Agents, enable the following Elasticsearch and Kibana security features."
+              defaultMessage="To use central management for Agents, enable the following security features." // DERBY - sanitized
             />
           </EuiCallOut>
           <EuiSpacer size="m" />
           <FormattedMessage
             id="xpack.ingestManager.setupPage.missingRequirementsElasticsearchTitle"
-            defaultMessage="In your Elasticsearch policy, enable:"
+            defaultMessage="In your back end policy, enable:" // DERBY - sanitized
           />
           <EuiSpacer size="l" />
           <RequirementItem isMissing={false}>
@@ -149,7 +149,7 @@ export const SetupPage: React.FunctionComponent<{
                   >
                     <FormattedMessage
                       id="xpack.ingestManager.setupPage.elasticsearchSecurityLink"
-                      defaultMessage="Elasticsearch security"
+                      defaultMessage="Configure security" // DERBY - sanitized
                     />
                   </EuiLink>
                 ),
@@ -189,7 +189,7 @@ xpack.security.authc.api_key.enabled: true`}
           <EuiSpacer size="l" />
           <FormattedMessage
             id="xpack.ingestManager.setupPage.missingRequirementsKibanaTitle"
-            defaultMessage="In your Kibana policy, enable:"
+            defaultMessage="In your PRISM policy, enable:"
           />
           <EuiSpacer size="l" />
           <RequirementItem isMissing={missingRequirements.includes('tls_required')}>
@@ -205,7 +205,7 @@ xpack.security.authc.api_key.enabled: true`}
                   >
                     <FormattedMessage
                       id="xpack.ingestManager.setupPage.kibanaSecurityLink"
-                      defaultMessage="Kibana security"
+                      defaultMessage="PRISM security"
                     />
                   </EuiLink>
                 ),
@@ -245,7 +245,7 @@ xpack.security.authc.api_key.enabled: true`}
                   >
                     <FormattedMessage
                       id="xpack.ingestManager.setupPage.kibanaEncryptionLink"
-                      defaultMessage="Kibana encryption key"
+                      defaultMessage="PRISM encryption key"
                     />
                   </EuiLink>
                 ),
