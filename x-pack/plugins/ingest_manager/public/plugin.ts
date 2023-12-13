@@ -110,10 +110,10 @@ export class IngestManagerPlugin
       deps.home.featureCatalogue.register({
         id: 'ingestManager',
         title: i18n.translate('xpack.ingestManager.featureCatalogueTitle', {
-          defaultMessage: 'Add Elastic Agent',
+          defaultMessage: 'Add Agent', // DERBY removed the word elastic
         }),
         description: i18n.translate('xpack.ingestManager.featureCatalogueDescription', {
-          defaultMessage: 'Add and manage your fleet of Elastic Agents and integrations.',
+          defaultMessage: 'Add and manage your fleet of Agents and integrations.', // DERBY removed the word elastic
         }),
         icon: 'indexManagementApp',
         showOnHomePage: true,
