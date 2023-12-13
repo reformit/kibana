@@ -51,6 +51,7 @@ export const WelcomeContent: FC = () => {
         <EuiSpacer size="s" />
         <EuiText>
           <p>
+            {/* DERBY Removed reference to Elasticsearch */}
             <FormattedMessage
               id="xpack.ml.fileDatavisualizer.welcomeContent.visualizeDataFromLogFileDescription"
               defaultMessage="The File Data Visualizer helps you understand the fields and metrics in a log file.

@@ -50,7 +50,7 @@ const TutorialDirectoryNotice: TutorialDirectoryNoticeComponent = memo(() => {
     });
   }, [isLoading, settingsData, dismissedNotice]);
 
-  const hasSeenNotice = true;
+  const hasSeenNotice = true; // DERBY turned off this notification
   // isLoading || settingsData?.item?.has_seen_add_data_notice || dismissedNotice;
 
   return hasIngestManager && !hasSeenNotice ? (
