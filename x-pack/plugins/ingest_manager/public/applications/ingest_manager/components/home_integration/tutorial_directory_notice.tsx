@@ -50,8 +50,8 @@ const TutorialDirectoryNotice: TutorialDirectoryNoticeComponent = memo(() => {
     });
   }, [isLoading, settingsData, dismissedNotice]);
 
-  const hasSeenNotice =
-    isLoading || settingsData?.item?.has_seen_add_data_notice || dismissedNotice;
+  const hasSeenNotice = true;
+  // isLoading || settingsData?.item?.has_seen_add_data_notice || dismissedNotice;
 
   return hasIngestManager && !hasSeenNotice ? (
     <>
