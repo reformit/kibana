@@ -90,7 +90,7 @@ export const DatavisualizerSelector: FC = () => {
                 <FormattedMessage
                   id="xpack.ml.datavisualizer.selector.dataVisualizerDescription"
                   defaultMessage="The Machine Learning Data Visualizer tool helps you understand your data,
-                  by analyzing the metrics and fields in a log file or an existing Elasticsearch index."
+                  by analyzing the metrics and fields in a log file or an existing index." // DERBY sanitized
                 />
               </EuiText>
             </EuiFlexItem>
