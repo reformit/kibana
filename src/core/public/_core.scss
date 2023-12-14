@@ -294,6 +294,11 @@ span.euiIEFlexWrapFix > div > div.euiFlexItem.euiFlexItem--flexGrowZero > div > 
   color: $secondary-color;
   background-color: rgba($color: $secondary-color, $alpha: 0.25);
 }
+
+.euiListGroupItem--primary .euiListGroupItem__text:not(:disabled),
+.euiListGroupItem--primary .euiListGroupItem__button:not(:disabled) {
+  color: $secondary-color;
+}
 /********************************
  * UNCONFIRMED
  ********************************/
