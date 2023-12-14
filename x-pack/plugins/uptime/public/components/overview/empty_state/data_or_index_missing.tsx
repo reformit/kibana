@@ -48,8 +48,8 @@ export const DataOrIndexMissing = ({ headingMessage, settings }: DataMissingProp
                 <p>
                   <FormattedMessage
                     id="xpack.uptime.emptyState.configureHeartbeatIndexSettings"
-                    defaultMessage="If you have setup heartbeat and confirmed data is being sent to Elasticsearch,
-                    update your index pattern settings and insure they are aligned with your Heartbeat config."
+                    defaultMessage="If you have setup heartbeat and confirmed data is being sent to the database,
+                    update your index pattern settings and insure they are aligned with your Heartbeat config." // DERBY sanitized
                   />
                 </p>
               </>

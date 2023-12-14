@@ -26,7 +26,7 @@ export const SetupGuideCta: React.FC = () => (
         <EuiText size="s" color="subdued">
           {i18n.translate('xpack.enterpriseSearch.overview.setupCta.description', {
             defaultMessage:
-              'Add search to your app or internal organization with Elastic App Search and Workplace Search. Watch the video to see what you can do when search is made easy.',
+              'Add search to your app or internal organization with App Search and Workplace Search. Watch the video to see what you can do when search is made easy.', // DERBY sanitized
           })}
         </EuiText>
       </EuiFlexItem>

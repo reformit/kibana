@@ -52,7 +52,7 @@ export const SetupGuide: React.FC = () => {
         <p>
           <FormattedMessage
             id="xpack.enterpriseSearch.workplaceSearch.setupGuide.description"
-            defaultMessage="Elastic Workplace Search unifies your content platforms (Google Drive, Salesforce) into a personalized search experience."
+            defaultMessage="Workplace Search unifies your content platforms (Google Drive, Salesforce) into a personalized search experience." // DERBY sanitized
           />
         </p>
       </EuiTitle>
@@ -65,7 +65,7 @@ export const SetupGuide: React.FC = () => {
         <p>
           <FormattedMessage
             id="xpack.enterpriseSearch.workplaceSearch.setupGuide.notConfigured"
-            defaultMessage="Workplace Search isn't configured in Kibana. Follow the instructions on this page."
+            defaultMessage="Workplace Search isn't configured in PRISM. Follow the instructions on this page." // DERBY sanitized
           />
         </p>
       </EuiText>
