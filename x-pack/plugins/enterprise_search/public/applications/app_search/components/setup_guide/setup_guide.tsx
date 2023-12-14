@@ -52,7 +52,7 @@ export const SetupGuide: React.FC = () => (
       <p>
         <FormattedMessage
           id="xpack.enterpriseSearch.appSearch.setupGuide.description"
-          defaultMessage="Elastic App Search provides tools to design and deploy a powerful search to your websites and mobile applications."
+          defaultMessage="App Search provides tools to design and deploy a powerful search to your websites and mobile applications."
         />
       </p>
     </EuiTitle>
@@ -61,7 +61,7 @@ export const SetupGuide: React.FC = () => (
       <p>
         <FormattedMessage
           id="xpack.enterpriseSearch.appSearch.setupGuide.notConfigured"
-          defaultMessage="App Search is not configured in your Kibana instance yet."
+          defaultMessage="App Search is not configured in your PRISM instance yet."
         />
       </p>
     </EuiText>
