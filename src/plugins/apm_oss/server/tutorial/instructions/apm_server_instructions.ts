@@ -42,7 +42,7 @@ const createStartServer = () => ({
   }),
   textPre: i18n.translate('apmOss.tutorial.startServer.textPre', {
     defaultMessage:
-      'The server processes and stores application performance metrics in Elasticsearch.',
+      'The server processes and stores application performance metrics in the database.', // DERBY sanitized
   }),
 });
 

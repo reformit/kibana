@@ -270,6 +270,18 @@ button.euiHeaderSectionItem__button[data-test-subj='newsfeed'] {
   background-color: $secondary-color;
 }
 
+.kbnMarkdown__body a {
+  color: $primary-color !important;
+}
+
+.kbnMarkdown__body a:hover {
+  color: rgba($color: $primary-color, $alpha: 0.5) !important;
+}
+
+.euiStep__circle[class*='incomplete'] {
+  border-color: $secondary-color;
+}
+
 /********************************
  * UNCONFIRMED
  ********************************/

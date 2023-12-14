@@ -68,8 +68,7 @@ export function NoServicesMessage({ historicalDataFound, status }: Props) {
             })}{' '}
             <KibanaLink path="/management/stack/upgrade_assistant">
               {i18n.translate('xpack.apm.servicesTable.UpgradeAssistantLink', {
-                defaultMessage:
-                  'Learn more by visiting the Kibana Upgrade Assistant',
+                defaultMessage: 'Learn more', // DERBY sanitized
               })}
             </KibanaLink>
             .
