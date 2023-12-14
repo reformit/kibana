@@ -178,18 +178,12 @@
 .euiComboBox.euiComboBox-isOpen .euiComboBox__inputWrap,
 .euiSuperSelectControl--compressed:focus,
 .euiSuperSelectControl--compressed:hover,
-.euiFieldPassword:focus {
-  background-image: linear-gradient(
-    to top,
-    $secondary-color,
-    $secondary-color 2px,
-    transparent 2px,
-    transparent 100%
-  );
-}
-
+.euiFieldPassword:focus,
+.euiMarkdownEditorTextArea:focus,
+.euiMarkdownEditor:focus-within .euiMarkdownEditorTextArea,
 .euiFilePicker__showDrop .euiFilePicker__prompt,
-.euiFilePicker__input:focus + .euiFilePicker__prompt {
+.euiFilePicker__input:focus + .euiFilePicker__prompt,
+.euiSuperSelectControl.euiSuperSelect--isOpen__button {
   background-image: linear-gradient(
     to top,
     $secondary-color,
@@ -270,6 +264,10 @@
 
 button.euiHeaderSectionItem__button[data-test-subj='newsfeed'] {
   display: none;
+}
+
+.euiStepNumber {
+  background-color: $secondary-color;
 }
 
 /********************************

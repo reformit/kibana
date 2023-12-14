@@ -362,9 +362,10 @@ export const AllCases = React.memo<AllCasesProps>(
 
     return (
       <>
-        {!isEmpty(actionsErrors) && (
-          <CaseCallOut title={ERROR_PUSH_SERVICE_CALLOUT_TITLE} messages={actionsErrors} />
-        )}
+        {!isEmpty(actionsErrors) &&
+          actionsErrors[0].id !== 'license-error' && ( // DERBY - supressed license error
+            <CaseCallOut title={ERROR_PUSH_SERVICE_CALLOUT_TITLE} messages={actionsErrors} />
+          )}
         {!isModal && (
           <CaseHeaderPage title={i18n.PAGE_TITLE}>
             <EuiFlexGroup
