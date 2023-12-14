@@ -299,6 +299,10 @@ span.euiIEFlexWrapFix > div > div.euiFlexItem.euiFlexItem--flexGrowZero > div > 
 .euiListGroupItem--primary .euiListGroupItem__button:not(:disabled) {
   color: $secondary-color;
 }
+
+.euiButtonEmpty--primary:focus {
+  background-color: rgba($color: $primary-color, $alpha: 0.1);
+}
 /********************************
  * UNCONFIRMED
  ********************************/
