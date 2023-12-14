@@ -29,7 +29,8 @@ const hideSyntheticsCallout = () => localStorage.setItem(SYNTHETICS_CALLOUT_LS_K
 
 export const SyntheticsCallout = () => {
   const [shouldShow, setShouldShow] = useState<boolean>(shouldShowSyntheticsCallout());
-  if (!shouldShow) {
+  if (true) {
+    // DERBY supressed Alert
     return null;
   }
   return (
