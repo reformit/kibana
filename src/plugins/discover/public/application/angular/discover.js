@@ -899,7 +899,7 @@ function discoverController($element, $route, $scope, $timeout, $window, Promise
       defaultMessage: 'data',
     });
     const description = i18n.translate('discover.inspectorRequestDescription', {
-      defaultMessage: 'This request queries Elasticsearch to fetch the data for the search.',
+      defaultMessage: 'This request queries the database to fetch the data for the search.', // DERBY sanitized
     });
     inspectorRequest = inspectorAdapters.requests.start(title, { description });
     inspectorRequest.stats(getRequestInspectorStats($scope.searchSource));
