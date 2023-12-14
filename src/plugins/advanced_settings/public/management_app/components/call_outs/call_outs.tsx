@@ -43,7 +43,7 @@ export const CallOuts = () => {
             Some of these settings may be undocumented, unsupported or experimental.
             If a field has a default value, blanking the field will reset it to its default which may be
             unacceptable given other configuration directives.
-            Deleting a custom setting will permanently remove it from PRISM's config."
+            Deleting a custom setting will permanently remove it from PRISM's config." // DERBY sanitized
           />
         </p>
       </EuiCallOut>

@@ -71,7 +71,7 @@ export const initUiSettings = (uiSettings: CoreSetup['uiSettings']) => {
     },
     [DEFAULT_INDEX_KEY]: {
       name: i18n.translate('xpack.securitySolution.uiSettings.defaultIndexLabel', {
-        defaultMessage: 'Indices',
+        defaultMessage: 'Indices', // DERBY Sanitized
       }),
       value: DEFAULT_INDEX_PATTERN,
       description: i18n.translate('xpack.securitySolution.uiSettings.defaultIndexDescription', {

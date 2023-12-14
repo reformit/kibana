@@ -27,6 +27,7 @@ interface Props {
   validator: RoleValidator;
 }
 
+// DERBY removed kibana log
 export class KibanaPrivilegesRegion extends Component<Props, {}> {
   public render() {
     return (

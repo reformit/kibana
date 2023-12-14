@@ -214,7 +214,7 @@ export const EditIndexPattern = withRouter(
             <p>
               <FormattedMessage
                 id="indexPatternManagement.editIndexPattern.timeFilterLabel.timeFilterDetail"
-                defaultMessage="This page lists every field in the {indexPatternTitle} index and the field's associated core type as recorded in the database. To change a field type, use the "
+                defaultMessage="This page lists every field in the {indexPatternTitle} index and the field's associated core type as recorded in the database. To change a field type, use the " // DERBY sanitized
                 values={{ indexPatternTitle: <strong>{indexPattern.title}</strong> }}
               />{' '}
               <EuiLink

@@ -182,7 +182,7 @@ const TlsError = ({
         <p role="banner">
           {i18n.translate('xpack.triggersActionsUI.components.healthCheck.tlsError', {
             defaultMessage:
-              'Alerting relies on API keys, which require TLS between the database and PRISM. ',
+              'Alerting relies on API keys, which require TLS between the database and PRISM. ', // DERBY Sanitized
           })}
           <EuiLink
             href={`${ELASTIC_WEBSITE_URL}guide/en/kibana/${DOC_LINK_VERSION}/configuring-tls.html`}

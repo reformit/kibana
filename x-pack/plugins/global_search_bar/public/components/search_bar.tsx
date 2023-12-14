@@ -249,7 +249,7 @@ export function SearchBar({
         inputRef: setSearchRef,
         compressed: true,
         placeholder: i18n.translate('xpack.globalSearchBar.searchBar.placeholder', {
-          defaultMessage: 'Search',
+          defaultMessage: 'Search', // DERBY Sanitized
         }),
         onFocus: () => {
           trackUiMetric(METRIC_TYPE.COUNT, 'search_focus');

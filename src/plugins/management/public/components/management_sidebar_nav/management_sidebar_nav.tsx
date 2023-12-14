@@ -65,24 +65,19 @@ export const ManagementSidebarNav = ({
   const sectionsToNavItems = (managementSections: ManagementSection[]) => {
     const sortedManagementSections = sortBy(managementSections, 'order');
 
-    const returnValue = sortedManagementSections.reduce<Array<EuiSideNavItemType<any>>>(
-      (acc, section) => {
-        const apps = sortBy(section.getAppsEnabled(), 'order');
+    return sortedManagementSections.reduce<Array<EuiSideNavItemType<any>>>((acc, section) => {
+      const apps = sortBy(section.getAppsEnabled(), 'order');
 
-        if (apps.length) {
-          acc.push({
-            ...createNavItem(section, {
-              items: appsToNavItems(apps),
-            }),
-          });
-        }
+      if (apps.length) {
+        acc.push({
+          ...createNavItem(section, {
+            items: appsToNavItems(apps),
+          }),
+        });
+      }
 
-        return acc;
-      },
-      []
-    );
-
-    return returnValue;
+      return acc;
+    }, []);
   };
 
   const appsToNavItems = (managementApps: ManagementApp[]) =>

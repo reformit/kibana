@@ -571,12 +571,12 @@ export const EditRolePage: FunctionComponent<Props> = ({
   const description = spaces.enabled ? (
     <FormattedMessage
       id="xpack.security.management.editRole.setPrivilegesToKibanaSpacesDescription"
-      defaultMessage="Set privileges on your data and control access to your PRISM spaces."
+      defaultMessage="Set privileges on your data and control access to your PRISM spaces." // DERBY Sanitized
     />
   ) : (
     <FormattedMessage
       id="xpack.security.management.editRole.setPrivilegesToKibanaDescription"
-      defaultMessage="Set privileges on your data and control access to PRISM."
+      defaultMessage="Set privileges on your data and control access to PRISM." // DERBY Sanitized
     />
   );
 

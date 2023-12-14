@@ -42,6 +42,7 @@ interface Props {
 
 export class ElasticsearchPrivileges extends Component<Props, {}> {
   public render() {
+    // DERBY Removed Icons
     return (
       <CollapsiblePanel iconType={''} title={'Data'}>
         {this.getForm()}

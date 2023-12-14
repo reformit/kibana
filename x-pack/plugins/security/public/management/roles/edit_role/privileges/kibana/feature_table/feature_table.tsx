@@ -65,6 +65,7 @@ export class FeatureTable extends Component<Props, {}> {
       });
   }
 
+  // DERBY removed icons
   public render() {
     const basePrivileges = this.props.kibanaPrivileges.getBasePrivileges(
       this.props.role.kibana[this.props.privilegeIndex]

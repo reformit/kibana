@@ -126,7 +126,7 @@ export const EmptyState = ({
               <h2>
                 <FormattedMessage
                   id="indexPatternManagement.createIndexPattern.emptyState.noDataTitle"
-                  defaultMessage="Ready to try PRISM? First, you need data."
+                  defaultMessage="Ready to try PRISM? First, you need data." // DERBY Sanitized
                 />
               </h2>
             </EuiTitle>
@@ -169,7 +169,7 @@ export const EmptyState = ({
                 description={
                   <FormattedMessage
                     id="indexPatternManagement.createIndexPattern.emptyState.sampleDataCardDescription"
-                    defaultMessage="Load a data set and a PRISM dashboard."
+                    defaultMessage="Load a data set and a PRISM dashboard." // DERBY sanitized
                   />
                 }
               />
