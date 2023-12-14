@@ -282,6 +282,18 @@ button.euiHeaderSectionItem__button[data-test-subj='newsfeed'] {
   border-color: $secondary-color;
 }
 
+span.euiIEFlexWrapFix > div > div.euiFlexItem.euiFlexItem--flexGrowZero > div > div.euiAvatar {
+  background-color: $secondary-color !important;
+}
+
+.euiCard--isSelectable--success.euiCard-isSelected {
+  border-color: $secondary-color;
+}
+
+.euiCardSelect--success:enabled {
+  color: $secondary-color;
+  background-color: rgba($color: $secondary-color, $alpha: 0.25);
+}
 /********************************
  * UNCONFIRMED
  ********************************/
