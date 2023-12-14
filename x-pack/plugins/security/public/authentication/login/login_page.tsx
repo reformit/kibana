@@ -193,13 +193,13 @@ export class LoginPage extends Component<Props, State> {
           title={
             <FormattedMessage
               id="xpack.security.loginPage.xpackUnavailableTitle"
-              defaultMessage="Cannot connect to the Elasticsearch cluster currently configured for Kibana."
+              defaultMessage="Cannot connect to the cluster currently configured for PRISM Analytics."
             />
           }
           message={
             <FormattedMessage
               id="xpack.security.loginPage.xpackUnavailableMessage"
-              defaultMessage="To use the full set of free features in this distribution of Kibana, please update Elasticsearch to the default distribution."
+              defaultMessage="To use the full set of free features in this distribution of PRISM Analytics, please update the database to the default distribution."
             />
           }
         />
@@ -218,7 +218,7 @@ export class LoginPage extends Component<Props, State> {
           message={
             <FormattedMessage
               id="xpack.security.loginPage.unknownLayoutMessage"
-              defaultMessage="See the Kibana logs for details and try reloading the page."
+              defaultMessage="See the PRISM Analytics logs for details and try reloading the page."
             />
           }
         />
