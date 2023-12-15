@@ -128,7 +128,7 @@ export const AppContainer: FunctionComponent<Props> = ({
             src={prismBase64Image}
             alt="PRISM Logo"
             style={{ width: '40px', height: '40px' }}
-            className="derbyLoadingLogo"
+            // className="derbyLoadingLogo"
           />
         </div>
       )}
