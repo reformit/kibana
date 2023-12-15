@@ -124,12 +124,7 @@ export const AppContainer: FunctionComponent<Props> = ({
       {showSpinner && (
         <div className="appContainer__loading">
           {/* <EuiLoadingElastic aria-label="Loading application" size="xxl" /> */}
-          <img
-            src={prismBase64Image}
-            alt="PRISM Logo"
-            style={{ width: '40px', height: '40px' }}
-            // className="derbyLoadingLogo"
-          />
+          <img src={prismBase64Image} alt="PRISM Logo" style={{ width: '40px', height: '40px' }} />
         </div>
       )}
       <div key={appId} ref={elementRef} />

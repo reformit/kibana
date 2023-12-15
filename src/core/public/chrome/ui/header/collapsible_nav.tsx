@@ -264,7 +264,7 @@ export function CollapsibleNav({
 
           // DERBY: Changed Kibana Label to prism
           if (category.id === 'kibana') {
-            category.label = 'PRISM';
+            category.label = 'PRISM Analytics';
 
             const idsToRemove = ['kibanaOverview', 'ml'];
 

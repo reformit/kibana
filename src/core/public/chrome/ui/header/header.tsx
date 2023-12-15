@@ -129,9 +129,6 @@ export function Header({
               },
               {
                 items: [
-                  <EuiHideFor sizes={['m', 'l', 'xl']}>
-                    <HeaderNavControls navControls$={observables.navControlsCenter$} />
-                  </EuiHideFor>,
                   <HeaderHelpMenu
                     helpExtension$={observables.helpExtension$}
                     helpSupportUrl$={observables.helpSupportUrl$}
