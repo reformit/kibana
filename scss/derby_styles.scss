@@ -51,6 +51,7 @@
 }
 
 .derbyLoginWelcome__subtitle {
+  font-size: 1.25em;
   font-weight: 300;
 }
 
@@ -98,4 +99,21 @@
   100% {
     opacity: 0;
   } /* Back to 0 opacity */
+}
+
+.loginWelcome__logo {
+  background-color: transparent;
+  border-radius: 0px;
+  box-shadow: none;
+  width: 100%;
+  height: auto;
+  /* Optionally, you can set a maximum width for the container to prevent the image from becoming too large on larger screens */
+  max-width: 100%; /* Adjust as needed */
+  margin-bottom: 0px;
+}
+
+.loginWelcome__logo img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures image won't have space below it */
 }
