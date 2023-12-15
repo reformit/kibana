@@ -22,11 +22,7 @@ import React, { FunctionComponent, createElement } from 'react';
 import { RenderingMetadata } from '../types';
 import { Fonts } from './fonts';
 import { Styles } from './styles';
-import {
-  defaultAppName,
-  prismAnalyticsIcon,
-  prismAnalyticsLogo,
-} from '../../../derby/derby_constants';
+import { defaultAppName, prismAnalyticsIcon } from '../../../../../derby/derby_constants';
 
 interface Props {
   metadata: RenderingMetadata;

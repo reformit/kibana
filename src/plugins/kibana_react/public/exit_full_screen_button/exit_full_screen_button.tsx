@@ -27,7 +27,7 @@ export interface ExitFullScreenButtonProps {
 }
 
 import './index.scss';
-import { prismAnalyticsIcon } from './derby/derby_constants';
+import { prismAnalyticsIcon } from '../../../../../derby/derby_constants';
 
 class ExitFullScreenButtonUi extends PureComponent<ExitFullScreenButtonProps> {
   public onKeyDown = (e: KeyboardEvent) => {

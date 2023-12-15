@@ -15,7 +15,7 @@ import { EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiTitle } from '@elastic/eui';
 import { i18n } from '@kbn/i18n';
 import { FormattedMessage } from '@kbn/i18n/react';
 import { CoreStart, FatalErrorsStart, HttpStart, NotificationsStart } from 'src/core/public';
-import { prismAnalyticsLogo } from '../../../derby/derby_constants';
+import { prismAnalyticsLogo } from '../../../../../../derby/derby_constants';
 import { LoginState } from '../../../common/login_state';
 import { LoginForm, DisabledLoginForm } from './components';
 

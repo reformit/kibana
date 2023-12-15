@@ -30,7 +30,7 @@ import type { MountPoint } from '../../types';
 import { AppLeaveHandler, AppStatus, AppUnmount, Mounter } from '../types';
 import { AppNotFound } from './app_not_found_screen';
 import { ScopedHistory } from '../scoped_history';
-import { prismAnalyticsIcon } from '../../../derby/derby_constants';
+import { prismAnalyticsIcon } from '../../../../../derby/';
 
 import './app_container.scss';
 

@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./",
     "baseUrl": ".",
     "paths": {
       // Allows for importing from `kibana` package for the exported types.
@@ -7,10 +9,9 @@
       "kibana/public": ["src/core/public"],
       "kibana/server": ["src/core/server"],
       "plugins/*": ["src/legacy/core_plugins/*/public/"],
-      "test_utils/*": [
-        "src/test_utils/public/*"
-      ],
-      "fixtures/*": ["src/fixtures/*"]
+      "test_utils/*": ["src/test_utils/public/*"],
+      "fixtures/*": ["src/fixtures/*"],
+      "derby/*": ["../derby/*"]
     },
     // Support .tsx files and transform JSX into calls to React.createElement
     "jsx": "react",

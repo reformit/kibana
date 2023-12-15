@@ -31,17 +31,13 @@
 }
 
 .derby-logo {
-  //display: flex;
-  //align-items: center;
-  // font-weight: 600 !important;
   display: block;
   background-color: transparent;
   border-radius: 0px;
   box-shadow: none;
   width: 100%;
   height: auto;
-  /* Optionally, you can set a maximum width for the container to prevent the image from becoming too large on larger screens */
-  max-width: 235px; /* Adjust as needed */
+  max-width: 235px;
   margin-bottom: 0px;
   margin-left: 8px;
 }
@@ -49,7 +45,7 @@
 .derby-logo img {
   width: 100%;
   height: auto;
-  display: block; /* Ensures image won't have space below it */
+  display: block;
 }
 
 .derby-logo span {

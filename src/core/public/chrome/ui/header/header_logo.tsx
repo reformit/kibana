@@ -24,7 +24,7 @@ import useObservable from 'react-use/lib/useObservable';
 import { Observable } from 'rxjs';
 import Url from 'url';
 import { ChromeNavLink } from '../..';
-import { prismAnalyticsLogo } from '../../../../../../src/core/derby/derby_constants';
+import { prismAnalyticsLogo } from '../../../../../../derby/derby_constants';
 
 function findClosestAnchor(element: HTMLElement): HTMLAnchorElement | void {
   let current = element;
