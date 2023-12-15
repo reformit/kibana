@@ -80,7 +80,8 @@ export const SetupGuide: React.FC<ISetupGuideProps> = ({
           steps={[
             {
               title: i18n.translate('xpack.enterpriseSearch.setupGuide.step1.title', {
-                defaultMessage: 'Add your {productName} host URL to your PRISM configuration', // DERBY sanitized
+                defaultMessage:
+                  'Add your {productName} host URL to your PRISM Analytics configuration', // DERBY sanitized
                 values: { productName },
               }),
               children: (
@@ -104,20 +105,20 @@ export const SetupGuide: React.FC<ISetupGuideProps> = ({
             },
             {
               title: i18n.translate('xpack.enterpriseSearch.setupGuide.step2.title', {
-                defaultMessage: 'Reload your PRISM instance', // DERBY sanitized
+                defaultMessage: 'Reload your PRISM Analytics instance', // DERBY sanitized
               }),
               children: (
                 <EuiText>
                   <p>
                     <FormattedMessage
                       id="xpack.enterpriseSearch.setupGuide.step2.instruction1"
-                      defaultMessage="Restart PRISM to pick up the configuration changes from the previous step." // DERBY sanitized
+                      defaultMessage="Restart PRISM Analytics to pick up the configuration changes from the previous step." // DERBY sanitized
                     />
                   </p>
                   <p>
                     <FormattedMessage
                       id="xpack.enterpriseSearch.setupGuide.step2.instruction2"
-                      defaultMessage="If you’re using {elasticsearchNativeAuthLink} in {productName}, you’re all set. Your users can now access {productName} in PRISM with their current {productName} access and permissions." // DERBY sanitized
+                      defaultMessage="If you’re using {elasticsearchNativeAuthLink} in {productName}, you’re all set. Your users can now access {productName} in PRISM Analytics with their current {productName} access and permissions." // DERBY sanitized
                       values={{
                         productName,
                         elasticsearchNativeAuthLink: elasticsearchNativeAuthLink ? (
@@ -146,7 +147,8 @@ export const SetupGuide: React.FC<ISetupGuideProps> = ({
                     buttonContent={i18n.translate(
                       'xpack.enterpriseSearch.troubleshooting.differentEsClusters.title',
                       {
-                        defaultMessage: '{productName} and PRISM are on different clusters', // DERBY sanitized
+                        defaultMessage:
+                          '{productName} and PRISM Analytics are on different clusters', // DERBY sanitized
                         values: { productName },
                       }
                     )}
@@ -157,7 +159,7 @@ export const SetupGuide: React.FC<ISetupGuideProps> = ({
                       <p>
                         <FormattedMessage
                           id="xpack.enterpriseSearch.troubleshooting.differentEsClusters.description"
-                          defaultMessage="This plugin does not currently support {productName} and PRISM running on different clusters." // DERBY sanitized
+                          defaultMessage="This plugin does not currently support {productName} and PRISM Analytics running on different clusters." // DERBY sanitized
                           values={{ productName }}
                         />
                       </p>
@@ -169,7 +171,7 @@ export const SetupGuide: React.FC<ISetupGuideProps> = ({
                       'xpack.enterpriseSearch.troubleshooting.differentAuth.title',
                       {
                         defaultMessage:
-                          '{productName} and PRISM are on different authentication methods', // DERBY sanitized
+                          '{productName} and PRISM Analytics are on different authentication methods', // DERBY sanitized
                         values: { productName },
                       }
                     )}
@@ -180,7 +182,7 @@ export const SetupGuide: React.FC<ISetupGuideProps> = ({
                       <p>
                         <FormattedMessage
                           id="xpack.enterpriseSearch.troubleshooting.differentAuth.description"
-                          defaultMessage="This plugin does not currently support {productName} and PRSIM operating on different authentication methods, for example, {productName} using a different SAML provider than PRISM." // DERBY sanitized
+                          defaultMessage="This plugin does not currently support {productName} and PRSIM operating on different authentication methods, for example, {productName} using a different SAML provider than PRISM Analytics." // DERBY sanitized
                           values={{ productName }}
                         />
                       </p>
@@ -202,7 +204,7 @@ export const SetupGuide: React.FC<ISetupGuideProps> = ({
                       <p>
                         <FormattedMessage
                           id="xpack.enterpriseSearch.troubleshooting.standardAuth.description"
-                          defaultMessage="This plugin does not fully support {productName} on {standardAuthLink}. Users created in {productName} must have PRISM access. Users created in PRISM will not see {productName} in the navigation menu." // DERBY sanitized
+                          defaultMessage="This plugin does not fully support {productName} on {standardAuthLink}. Users created in {productName} must have PRISM Analytics access. Users created in PRISM Analytics will not see {productName} in the navigation menu." // DERBY sanitized
                           values={{
                             productName,
                             standardAuthLink: standardAuthLink ? (

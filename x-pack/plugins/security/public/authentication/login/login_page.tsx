@@ -39,7 +39,7 @@ const infoMessageMap = new Map([
   [
     'LOGGED_OUT',
     i18n.translate('xpack.security.login.loggedOutDescription', {
-      defaultMessage: 'You have logged out of PRISM.', // DERBY Sanitized
+      defaultMessage: 'You have logged out of PRISM Analytics.', // DERBY Sanitized
     }),
   ],
 ]);

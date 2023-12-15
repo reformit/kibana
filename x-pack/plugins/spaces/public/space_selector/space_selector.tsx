@@ -113,7 +113,7 @@ export class SpaceSelector extends Component<Props, State> {
             <span className="spcSpaceSelector__logo">
               <img
                 src={prismBase64Image}
-                alt="PRISM Logo"
+                alt="PRISM Analytics Logo"
                 style={{ width: '40px', height: '40px' }}
               />
             </span>

@@ -105,7 +105,7 @@ export const TransformManagement: FC = () => {
           <EuiText color="subdued">
             <FormattedMessage
               id="xpack.transform.transformList.transformDescription"
-              defaultMessage="Use transforms to pivot existing PRISM indices into summarized or entity-centric indices." // DERBY Sanitized
+              defaultMessage="Use transforms to pivot existing PRISM Analytics indices into summarized or entity-centric indices." // DERBY Sanitized
             />
           </EuiText>
         </EuiTitle>

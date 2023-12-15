@@ -53,11 +53,11 @@ const sectionTip = i18n.translate('management.sections.section.tip', {
 });
 
 const kibanaTitle = i18n.translate('management.sections.kibanaTitle', {
-  defaultMessage: 'PRISM', // DERBY sanitzied
+  defaultMessage: 'PRISM Analytics', // DERBY sanitzied
 });
 
 const kibanaTip = i18n.translate('management.sections.kibanaTip', {
-  defaultMessage: 'Customize PRISM and manage saved objects', // DERBY sanitized
+  defaultMessage: 'Customize PRISM Analytics and manage saved objects', // DERBY sanitized
 });
 
 const stackTitle = i18n.translate('management.sections.stackTitle', {

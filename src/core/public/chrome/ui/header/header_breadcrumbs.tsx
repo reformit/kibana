@@ -30,7 +30,7 @@ interface Props {
 }
 
 export function HeaderBreadcrumbs({ appTitle$, breadcrumbs$ }: Props) {
-  const appTitle = 'Derby PRISM'; // useObservable(appTitle$, 'Derby PRISM'); // DERBY Sanitized
+  const appTitle = 'PRISM Analytics'; // useObservable(appTitle$, 'Derby PRISM'); // DERBY Sanitized
   const breadcrumbs = useObservable(breadcrumbs$, []);
   let crumbs = breadcrumbs;
 

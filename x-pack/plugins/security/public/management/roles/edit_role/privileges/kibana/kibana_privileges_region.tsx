@@ -31,7 +31,7 @@ interface Props {
 export class KibanaPrivilegesRegion extends Component<Props, {}> {
   public render() {
     return (
-      <CollapsiblePanel iconType={''} title={'PRISM'}>
+      <CollapsiblePanel iconType={''} title={'PRISM Analytics'}>
         {this.getForm()}
       </CollapsiblePanel>
     );

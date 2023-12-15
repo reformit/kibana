@@ -167,7 +167,7 @@ export class TelemetryManagementSection extends Component<Props, State> {
           <p>
             <FormattedMessage
               id="telemetry.callout.appliesSettingTitle"
-              defaultMessage="Changes to this setting apply to all of PRISM and are saved automatically." // DERBY Sanitized
+              defaultMessage="Changes to this setting apply to all of PRISM Analytics and are saved automatically." // DERBY Sanitized
               values={{
                 allOfKibanaText: (
                   <strong>

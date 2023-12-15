@@ -108,7 +108,7 @@ export class FeatureTable extends Component<Props, {}> {
           <EuiFlexItem grow={1}>
             <EuiTitle size="xs">
               <h4 className="eui-displayInlineBlock">
-                {category.id !== 'kibana' ? category.label : 'PRISM'}
+                {category.id !== 'kibana' ? category.label : 'PRISM Analytics'}
               </h4>
             </EuiTitle>
           </EuiFlexItem>

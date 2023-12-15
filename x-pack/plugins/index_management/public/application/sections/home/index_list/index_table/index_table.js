@@ -500,7 +500,7 @@ export class IndexTable extends Component {
                   <EuiText color="subdued">
                     <FormattedMessage
                       id="xpack.idxMgmt.home.idxMgmtDescription"
-                      defaultMessage="Update your PRISM indices individually or in bulk. {learnMoreLink}" // DERBY Sanitized
+                      defaultMessage="Update your PRISM Analytics indices individually or in bulk. {learnMoreLink}" // DERBY Sanitized
                       values={{
                         learnMoreLink: (
                           <EuiLink

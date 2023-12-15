@@ -189,7 +189,7 @@ xpack.security.authc.api_key.enabled: true`}
           <EuiSpacer size="l" />
           <FormattedMessage
             id="xpack.ingestManager.setupPage.missingRequirementsKibanaTitle"
-            defaultMessage="In your PRISM policy, enable:" // DERBY Sanitized
+            defaultMessage="In your PRISM Analytics policy, enable:" // DERBY Sanitized
           />
           <EuiSpacer size="l" />
           <RequirementItem isMissing={missingRequirements.includes('tls_required')}>
@@ -205,7 +205,7 @@ xpack.security.authc.api_key.enabled: true`}
                   >
                     <FormattedMessage
                       id="xpack.ingestManager.setupPage.kibanaSecurityLink"
-                      defaultMessage="PRISM security" // DERBY Sanitized
+                      defaultMessage="PRISM Analytics security" // DERBY Sanitized
                     />
                   </EuiLink>
                 ),
@@ -245,7 +245,7 @@ xpack.security.authc.api_key.enabled: true`}
                   >
                     <FormattedMessage
                       id="xpack.ingestManager.setupPage.kibanaEncryptionLink"
-                      defaultMessage="PRISM encryption key" // DERBY Sanitized
+                      defaultMessage="PRISM Analytics encryption key" // DERBY Sanitized
                     />
                   </EuiLink>
                 ),

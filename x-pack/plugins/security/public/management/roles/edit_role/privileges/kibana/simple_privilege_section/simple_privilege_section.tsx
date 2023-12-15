@@ -57,7 +57,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
     const title = (
       <FormattedMessage
         id="xpack.security.management.editRole.simplePrivilegeForm.kibanaPrivilegesTitle"
-        defaultMessage="PRISM privileges" // DERBY Sanitized
+        defaultMessage="PRISM Analytics privileges" // DERBY Sanitized
       />
     );
 
@@ -65,7 +65,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
       <p>
         <FormattedMessage
           id="xpack.security.management.editRole.simplePrivilegeForm.specifyPrivilegeForRoleDescription"
-          defaultMessage="Specifies the PRISM privilege for this role." // DERBY Sanitized
+          defaultMessage="Specifies the PRISM Analytics privilege for this role." // DERBY Sanitized
         />
       </p>
     );
@@ -112,7 +112,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
                           <p>
                             <FormattedMessage
                               id="xpack.security.management.editRole.simplePrivilegeForm.noPrivilegeDropdownDescription"
-                              defaultMessage="No access to PRISM" // DERBY Sanitized
+                              defaultMessage="No access to PRISM Analytics" // DERBY Sanitized
                             />
                           </p>
                         </EuiText>
@@ -139,7 +139,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
                           <p>
                             <FormattedMessage
                               id="xpack.security.management.editRole.simplePrivilegeForm.customPrivilegeDropdownDescription"
-                              defaultMessage="Customize access to PRISM" // DERBY Sanitized
+                              defaultMessage="Customize access to PRISM Analytics" // DERBY Sanitized
                             />
                           </p>
                         </EuiText>
@@ -166,7 +166,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
                           <p>
                             <FormattedMessage
                               id="xpack.security.management.editRole.simplePrivilegeForm.readPrivilegeDropdownDescription"
-                              defaultMessage="Grants read-only access to all of PRISM" // DERBY Sanitized
+                              defaultMessage="Grants read-only access to all of PRISM Analytics" // DERBY Sanitized
                             />
                           </p>
                         </EuiText>
@@ -193,7 +193,7 @@ export class SimplePrivilegeSection extends Component<Props, State> {
                           <p>
                             <FormattedMessage
                               id="xpack.security.management.editRole.simplePrivilegeForm.allPrivilegeDropdownDescription"
-                              defaultMessage="Grants full access to all of PRISM" // DERBY Sanitized
+                              defaultMessage="Grants full access to all of PRISM Analytics" // DERBY Sanitized
                             />
                           </p>
                         </EuiText>

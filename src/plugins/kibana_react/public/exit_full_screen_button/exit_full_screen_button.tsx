@@ -73,7 +73,7 @@ class ExitFullScreenButtonUi extends PureComponent<ExitFullScreenButtonProps> {
               <EuiFlexItem grow={false}>
                 <img
                   src={prismBase64Image}
-                  alt="PRISM Logo" // DERBY Sanitized
+                  alt="PRISM Analytics Logo" // DERBY Sanitized
                   style={{ width: '15px', height: '15px' }}
                   aria-label={i18n.translate(
                     'core.ui.chrome.headerGlobalNav.goHomePageIconAriaLabel',

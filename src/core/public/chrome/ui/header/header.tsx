@@ -22,7 +22,6 @@ import {
   EuiHeaderSection,
   EuiHeaderSectionItem,
   EuiHeaderSectionItemButton,
-  EuiHideFor,
   EuiIcon,
   EuiShowFor,
   htmlIdGenerator,

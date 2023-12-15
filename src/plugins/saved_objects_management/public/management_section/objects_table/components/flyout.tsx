@@ -620,7 +620,7 @@ export class Flyout extends Component<FlyoutProps, FlyoutState> {
             <div className="derby-saved-objects-import-loading">
               <img
                 src={prismBase64Image}
-                alt="PRISM Logo"
+                alt="PRISM Analytics Logo"
                 style={{ width: '20px', height: '20px' }}
                 aria-label={i18n.translate(
                   'core.ui.chrome.headerGlobalNav.goHomePageIconAriaLabel',

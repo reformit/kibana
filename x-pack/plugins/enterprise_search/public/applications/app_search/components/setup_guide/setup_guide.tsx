@@ -61,7 +61,7 @@ export const SetupGuide: React.FC = () => (
       <p>
         <FormattedMessage
           id="xpack.enterpriseSearch.appSearch.setupGuide.notConfigured"
-          defaultMessage="App Search is not configured in your PRISM instance yet."
+          defaultMessage="App Search is not configured in your PRISM Analytics instance yet."
         />
       </p>
     </EuiText>

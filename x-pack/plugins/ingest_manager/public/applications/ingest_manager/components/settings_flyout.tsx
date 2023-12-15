@@ -254,7 +254,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
       <EuiFormRow>
         <EuiFormRow
           label={i18n.translate('xpack.ingestManager.settings.kibanaUrlLabel', {
-            defaultMessage: 'PRISM URL',
+            defaultMessage: 'PRISM Analytics URL',
           })}
           {...inputs.kibanaUrls.formRowProps}
         >

@@ -107,13 +107,13 @@ export const ReportDiagnostic = ({ apiClient }: Props) => {
   const steps = [
     {
       title: i18n.translate('xpack.reporting.listing.diagnosticConfigTitle', {
-        defaultMessage: 'Verify PRISM configuration', // DERBY Sanitized
+        defaultMessage: 'Verify PRISM Analytics configuration', // DERBY Sanitized
       }),
       children: (
         <Fragment>
           <FormattedMessage
             id="xpack.reporting.listing.diagnosticConfigMessage"
-            defaultMessage="Ensure your PRISM configuration is properly set up for reports." // DERBY Sanitized
+            defaultMessage="Ensure your PRISM Analytics configuration is properly set up for reports." // DERBY Sanitized
           />
           <EuiSpacer />
           <EuiButton

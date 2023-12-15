@@ -110,7 +110,7 @@ export function HeaderLogo({ href, navigateToApp, ...observables }: Props) {
     >
       <img
         src={prismAnalyticsLogo}
-        alt="PRISM Logo"
+        alt="PRISM Analytics Logo"
         aria-label={i18n.translate('core.ui.chrome.headerGlobalNav.goHomePageIconAriaLabel', {
           defaultMessage: 'Go to home page',
         })}

@@ -95,7 +95,7 @@ export class PrivilegeSpaceForm extends Component<Props, State> {
               <h2>
                 <FormattedMessage
                   id="xpack.security.management.editRole.spacePrivilegeForm.modalTitle"
-                  defaultMessage="PRISM privileges" // DERBY Sanitized
+                  defaultMessage="PRISM Analytics privileges" // DERBY Sanitized
                 />
               </h2>
             </EuiTitle>
@@ -168,7 +168,7 @@ export class PrivilegeSpaceForm extends Component<Props, State> {
             'xpack.security.management.editRole.spacePrivilegeForm.spaceSelectorFormHelpText',
             {
               defaultMessage:
-                'Select one or more PRISM spaces to which you wish to assign privileges.', // DERBY Sanitized
+                'Select one or more PRISM Analytics spaces to which you wish to assign privileges.', // DERBY Sanitized
             }
           )}
         >

@@ -64,7 +64,7 @@ describe('health check', () => {
     const [description, action] = queryAllByText(/TLS/i);
 
     expect(description.textContent).toMatchInlineSnapshot(
-      `"Alerting relies on API keys, which require TLS between the database and PRISM. Learn how to enable TLS."`
+      `"Alerting relies on API keys, which require TLS between the database and PRISM Analytics. Learn how to enable TLS."`
     );
 
     expect(action.textContent).toMatchInlineSnapshot(`"Learn how to enable TLS."`);

@@ -65,7 +65,7 @@ export const SetupGuide: React.FC = () => {
         <p>
           <FormattedMessage
             id="xpack.enterpriseSearch.workplaceSearch.setupGuide.notConfigured"
-            defaultMessage="Workplace Search isn't configured in PRISM. Follow the instructions on this page." // DERBY sanitized
+            defaultMessage="Workplace Search isn't configured in PRISM Analytics. Follow the instructions on this page." // DERBY sanitized
           />
         </p>
       </EuiText>
