@@ -33,6 +33,7 @@ import { FeatureTable } from '../feature_table';
 import { CUSTOM_PRIVILEGE_VALUE } from '../constants';
 import { PrivilegeFormCalculator } from '../privilege_form_calculator';
 import { KibanaPrivileges } from '../../../../model';
+import { prismAppName } from '../../../../../../../../../derby/constants';
 
 interface Props {
   role: Role;
@@ -95,7 +96,7 @@ export class PrivilegeSpaceForm extends Component<Props, State> {
               <h2>
                 <FormattedMessage
                   id="xpack.security.management.editRole.spacePrivilegeForm.modalTitle"
-                  defaultMessage="PRISM Analytics privileges" // DERBY Sanitized
+                  defaultMessage={`${prismAppName} privileges`} // DERBY Sanitized
                 />
               </h2>
             </EuiTitle>
@@ -167,8 +168,7 @@ export class PrivilegeSpaceForm extends Component<Props, State> {
           helpText={i18n.translate(
             'xpack.security.management.editRole.spacePrivilegeForm.spaceSelectorFormHelpText',
             {
-              defaultMessage:
-                'Select one or more PRISM Analytics spaces to which you wish to assign privileges.', // DERBY Sanitized
+              defaultMessage: `Select one or more ${prismAppName} spaces to which you wish to assign privileges.`, // DERBY Sanitized
             }
           )}
         >

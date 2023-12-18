@@ -23,6 +23,7 @@ import React from 'react';
 import useObservable from 'react-use/lib/useObservable';
 import { Observable } from 'rxjs';
 import { ChromeBreadcrumb } from '../../chrome_service';
+import { prismAppName } from '../../../../derby/constants';
 
 interface Props {
   appTitle$: Observable<string>;
@@ -30,7 +31,7 @@ interface Props {
 }
 
 export function HeaderBreadcrumbs({ appTitle$, breadcrumbs$ }: Props) {
-  const appTitle = 'PRISM Analytics'; // useObservable(appTitle$, 'Derby PRISM'); // DERBY Sanitized
+  const appTitle = prismAppName; // useObservable(appTitle$, 'Derby PRISM'); // DERBY Sanitized
   const breadcrumbs = useObservable(breadcrumbs$, []);
   let crumbs = breadcrumbs;
 

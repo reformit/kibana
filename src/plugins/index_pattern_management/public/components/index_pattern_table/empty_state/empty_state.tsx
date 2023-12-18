@@ -40,6 +40,7 @@ import {
 import { useHistory } from 'react-router-dom';
 import { reactRouterNavigate } from '../../../../../../plugins/kibana_react/public';
 import { MlCardState } from '../../../types';
+import { prismAppName } from '../../../derby/constants';
 
 export const EmptyState = ({
   onRefresh,
@@ -126,7 +127,7 @@ export const EmptyState = ({
               <h2>
                 <FormattedMessage
                   id="indexPatternManagement.createIndexPattern.emptyState.noDataTitle"
-                  defaultMessage="Ready to try PRISM Analytics? First, you need data." // DERBY Sanitized
+                  defaultMessage={`Ready to try ${prismAppName}? First, you need data.`} // DERBY Sanitized
                 />
               </h2>
             </EuiTitle>
@@ -169,7 +170,7 @@ export const EmptyState = ({
                 description={
                   <FormattedMessage
                     id="indexPatternManagement.createIndexPattern.emptyState.sampleDataCardDescription"
-                    defaultMessage="Load a data set and a PRISM Analytics dashboard." // DERBY sanitized
+                    defaultMessage={`Load a data set and a ${prismAppName} dashboard.`} // DERBY sanitized
                   />
                 }
               />

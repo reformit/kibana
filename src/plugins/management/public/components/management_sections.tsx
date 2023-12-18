@@ -19,6 +19,7 @@
 
 import { i18n } from '@kbn/i18n';
 import { ManagementSectionId } from '../types';
+import { prismAppName } from '../derby/constants';
 
 const ingestTitle = i18n.translate('management.sections.ingestTitle', {
   defaultMessage: 'Ingest',
@@ -53,11 +54,11 @@ const sectionTip = i18n.translate('management.sections.section.tip', {
 });
 
 const kibanaTitle = i18n.translate('management.sections.kibanaTitle', {
-  defaultMessage: 'PRISM Analytics', // DERBY sanitzied
+  defaultMessage: `${prismAppName}`, // DERBY sanitzied
 });
 
 const kibanaTip = i18n.translate('management.sections.kibanaTip', {
-  defaultMessage: 'Customize PRISM Analytics and manage saved objects', // DERBY sanitized
+  defaultMessage: `Customize ${prismAppName} and manage saved objects`, // DERBY sanitized
 });
 
 const stackTitle = i18n.translate('management.sections.stackTitle', {

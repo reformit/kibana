@@ -21,6 +21,7 @@ import {
   EuiTitle,
 } from '@elastic/eui';
 import { ReportingAPIClient, DiagnoseResponse } from '../lib/reporting_api_client';
+import { prismAppName } from '../../../../derby/constants';
 
 interface Props {
   apiClient: ReportingAPIClient;
@@ -107,13 +108,13 @@ export const ReportDiagnostic = ({ apiClient }: Props) => {
   const steps = [
     {
       title: i18n.translate('xpack.reporting.listing.diagnosticConfigTitle', {
-        defaultMessage: 'Verify PRISM Analytics configuration', // DERBY Sanitized
+        defaultMessage: `Verify ${prismAppName} configuration`, // DERBY Sanitized
       }),
       children: (
         <Fragment>
           <FormattedMessage
             id="xpack.reporting.listing.diagnosticConfigMessage"
-            defaultMessage="Ensure your PRISM Analytics configuration is properly set up for reports." // DERBY Sanitized
+            defaultMessage={`Ensure your ${prismAppName} configuration is properly set up for reports.`} // DERBY Sanitized
           />
           <EuiSpacer />
           <EuiButton

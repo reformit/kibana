@@ -43,6 +43,7 @@ import { AppContextConsumer } from '../../../../app_context';
 import { renderBadges } from '../../../../lib/render_badges';
 import { NoMatch, PageErrorForbidden, DataHealth } from '../../../../components';
 import { IndexActionsContextMenu } from '../index_actions_context_menu';
+import { prismAppName } from '../../../../../../../../derby/constants';
 
 const HEADERS = {
   name: i18n.translate('xpack.idxMgmt.indexTable.headers.nameHeader', {
@@ -500,7 +501,7 @@ export class IndexTable extends Component {
                   <EuiText color="subdued">
                     <FormattedMessage
                       id="xpack.idxMgmt.home.idxMgmtDescription"
-                      defaultMessage="Update your PRISM Analytics indices individually or in bulk. {learnMoreLink}" // DERBY Sanitized
+                      defaultMessage={`Update your ${prismAppName} indices individually or in bulk. {learnMoreLink}`} // DERBY Sanitized
                       values={{
                         learnMoreLink: (
                           <EuiLink

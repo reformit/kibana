@@ -13,6 +13,7 @@
     "types/**/*",
     "test_helpers/**/*",
     "utils/**/*",
+    "derby/**/*",
     "index.ts",
     "typings.ts"
   ],

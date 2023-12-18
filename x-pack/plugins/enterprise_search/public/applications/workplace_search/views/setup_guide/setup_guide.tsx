@@ -14,6 +14,7 @@ import { SetupGuide as SetupGuideLayout } from '../../../shared/setup_guide';
 import { SetWorkplaceSearchChrome as SetPageChrome } from '../../../shared/kibana_chrome';
 import { SendWorkplaceSearchTelemetry as SendTelemetry } from '../../../shared/telemetry';
 import GettingStarted from './assets/getting_started.png';
+import { prismAppName } from '../../../../../../../derby/constants';
 
 const GETTING_STARTED_LINK_URL =
   'https://www.elastic.co/guide/en/workplace-search/current/workplace-search-getting-started.html';
@@ -65,7 +66,7 @@ export const SetupGuide: React.FC = () => {
         <p>
           <FormattedMessage
             id="xpack.enterpriseSearch.workplaceSearch.setupGuide.notConfigured"
-            defaultMessage="Workplace Search isn't configured in PRISM Analytics. Follow the instructions on this page." // DERBY sanitized
+            defaultMessage={`Workplace Search isn't configured in ${prismAppName}. Follow the instructions on this page.`} // DERBY sanitized
           />
         </p>
       </EuiText>

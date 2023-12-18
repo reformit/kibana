@@ -39,6 +39,7 @@ import { InternalApplicationStart } from '../../../application/types';
 import { HttpStart } from '../../../http';
 import { OnIsLockedUpdate } from './';
 import { createEuiListItem, createRecentNavLink, isModifiedOrPrevented } from './nav_link';
+import { prismAppName } from '../../../../derby/constants';
 
 function getAllCategories(allCategorizedLinks: Record<string, ChromeNavLink[]>) {
   const allCategories = {} as Record<string, AppCategory | undefined>;
@@ -264,7 +265,7 @@ export function CollapsibleNav({
 
           // DERBY: Changed Kibana Label to prism
           if (category.id === 'kibana') {
-            category.label = 'PRISM Analytics';
+            category.label = prismAppName;
 
             const idsToRemove = ['kibanaOverview', 'ml'];
 

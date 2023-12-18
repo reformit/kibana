@@ -30,6 +30,7 @@ import { PrivilegeFormCalculator } from '../privilege_form_calculator';
 import { FeatureTableCell } from '../feature_table_cell';
 import { KibanaPrivileges, SecuredFeature } from '../../../../model';
 import './feature_table.scss';
+import { prismAppName } from '../../../../../../../../../derby/constants';
 
 interface Props {
   role: Role;
@@ -100,7 +101,7 @@ export class FeatureTable extends Component<Props, {}> {
           <EuiFlexItem grow={1}>
             <EuiTitle size="xs">
               <h4 className="eui-displayInlineBlock">
-                {category.id !== 'kibana' ? category.label : 'PRISM Analytics'}
+                {category.id !== 'kibana' ? category.label : prismAppName}
               </h4>
             </EuiTitle>
           </EuiFlexItem>

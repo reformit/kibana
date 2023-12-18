@@ -14,6 +14,7 @@ import { SimplePrivilegeSection } from './simple_privilege_section';
 import { SpaceAwarePrivilegeSection } from './space_aware_privilege_section';
 import { TransformErrorSection } from './transform_error_section';
 import { KibanaPrivileges } from '../../../model';
+import { prismAppName } from '../../../../../../../../derby/constants';
 
 interface Props {
   role: Role;
@@ -31,7 +32,7 @@ interface Props {
 export class KibanaPrivilegesRegion extends Component<Props, {}> {
   public render() {
     return (
-      <CollapsiblePanel iconType={''} title={'PRISM Analytics'}>
+      <CollapsiblePanel iconType={''} title={prismAppName}>
         {this.getForm()}
       </CollapsiblePanel>
     );

@@ -66,6 +66,7 @@ import { RolesAPIClient } from '../roles_api_client';
 import { PrivilegesAPIClient } from '../privileges_api_client';
 import { KibanaPrivileges } from '../model';
 import { reactRouterNavigate } from '../../../../../../../src/plugins/kibana_react/public';
+import { prismAppName } from '../../../../../../derby/constants';
 
 interface Props {
   action: 'edit' | 'clone';
@@ -571,12 +572,12 @@ export const EditRolePage: FunctionComponent<Props> = ({
   const description = spaces.enabled ? (
     <FormattedMessage
       id="xpack.security.management.editRole.setPrivilegesToKibanaSpacesDescription"
-      defaultMessage="Set privileges on your data and control access to your PRISM Analytics spaces." // DERBY Sanitized
+      defaultMessage={`Set privileges on your data and control access to your ${prismAppName} spaces.`} // DERBY Sanitized
     />
   ) : (
     <FormattedMessage
       id="xpack.security.management.editRole.setPrivilegesToKibanaDescription"
-      defaultMessage="Set privileges on your data and control access to PRISM Analytics." // DERBY Sanitized
+      defaultMessage={`Set privileges on your data and control access to ${prismAppName}.`} // DERBY Sanitized
     />
   );
 

@@ -34,6 +34,7 @@ import { useRefreshInterval } from './components/transform_list/use_refresh_inte
 import { SearchSelection } from './components/search_selection';
 import { TransformList } from './components/transform_list';
 import { TransformStatsBar } from './components/transform_list/transforms_stats_bar';
+import { prismAppName } from '../../../../../../derby/constants';
 
 export const TransformManagement: FC = () => {
   const { esTransform } = useDocumentationLinks();
@@ -105,7 +106,7 @@ export const TransformManagement: FC = () => {
           <EuiText color="subdued">
             <FormattedMessage
               id="xpack.transform.transformList.transformDescription"
-              defaultMessage="Use transforms to pivot existing PRISM Analytics indices into summarized or entity-centric indices." // DERBY Sanitized
+              defaultMessage={`Use transforms to pivot existing ${prismAppName} indices into summarized or entity-centric indices.`} // DERBY Sanitized
             />
           </EuiText>
         </EuiTitle>

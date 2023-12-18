@@ -28,6 +28,7 @@ import { safeLoad } from 'js-yaml';
 import { useComboInput, useCore, useGetSettings, useInput, sendPutSettings } from '../hooks';
 import { useGetOutputs, sendPutOutput } from '../hooks/use_request/outputs';
 import { isDiffPathProtocol } from '../../../../common/';
+import { prismAppName } from '../../../../../../derby/constants';
 
 const URL_REGEX = /^(https?):\/\/[^\s$.?#].[^\s]*$/gm;
 
@@ -254,7 +255,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
       <EuiFormRow>
         <EuiFormRow
           label={i18n.translate('xpack.ingestManager.settings.kibanaUrlLabel', {
-            defaultMessage: 'PRISM Analytics URL',
+            defaultMessage: `${prismAppName} URL`,
           })}
           {...inputs.kibanaUrls.formRowProps}
         >

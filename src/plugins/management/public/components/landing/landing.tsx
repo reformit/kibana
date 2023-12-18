@@ -28,6 +28,7 @@ import {
   EuiText,
   EuiTitle,
 } from '@elastic/eui';
+import { prismAppName } from '../../derby/constants';
 
 interface ManagementLandingPageProps {
   version: string;
@@ -55,7 +56,7 @@ export const ManagementLandingPage = ({ version, setBreadcrumbs }: ManagementLan
           <EuiText>
             <FormattedMessage
               id="management.landing.subhead"
-              defaultMessage="Manage your indices, index patterns, saved objects, Kibana settings, and more."
+              defaultMessage={`Manage your indices, index patterns, saved objects, ${prismAppName} settings, and more.`} // DERBY sanitized
             />
           </EuiText>
         </div>

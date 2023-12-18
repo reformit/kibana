@@ -43,6 +43,7 @@ import { EmptyState } from './empty_state';
 import { MatchedItem, ResolveIndexResponseItemAlias } from '../create_index_pattern_wizard/types';
 import { EmptyIndexPatternPrompt } from './empty_index_pattern_prompt';
 import { getIndices } from '../create_index_pattern_wizard/lib';
+import { prismAppName } from '../../derby/constants';
 
 const pagination = {
   initialPageSize: 10,
@@ -230,7 +231,7 @@ export const IndexPatternTable = ({ canSave, history }: Props) => {
             <p>
               <FormattedMessage
                 id="indexPatternManagement.indexPatternTable.indexPatternExplanation"
-                defaultMessage="Create and manage the index patterns that help you retrieve your data for PRISM Analytics." // DERBY Sanitized
+                defaultMessage={`Create and manage the index patterns that help you retrieve your data for ${prismAppName}.`} // DERBY Sanitized
               />
             </p>
           </EuiText>

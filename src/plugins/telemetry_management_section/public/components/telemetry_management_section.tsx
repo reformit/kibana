@@ -37,6 +37,7 @@ import { OptInExampleFlyout } from './opt_in_example_flyout';
 import { OptInSecurityExampleFlyout } from './opt_in_security_example_flyout';
 import { LazyField } from '../../../advanced_settings/public';
 import { ToastsStart } from '../../../../core/public';
+import { prismAppName } from '../derby/constants';
 
 type TelemetryService = TelemetryPluginSetup['telemetryService'];
 
@@ -167,7 +168,7 @@ export class TelemetryManagementSection extends Component<Props, State> {
           <p>
             <FormattedMessage
               id="telemetry.callout.appliesSettingTitle"
-              defaultMessage="Changes to this setting apply to all of PRISM Analytics and are saved automatically." // DERBY Sanitized
+              defaultMessage={`Changes to this setting apply to all of ${prismAppName} and are saved automatically.`} // DERBY Sanitized
               values={{
                 allOfKibanaText: (
                   <strong>

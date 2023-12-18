@@ -25,6 +25,7 @@ import {
 import { useCore, sendPostFleetSetup } from '../../../hooks';
 import { WithoutHeaderLayout } from '../../../layouts';
 import { GetFleetStatusResponse } from '../../../types';
+import { prismAppName } from '../../../../../../../../derby/constants';
 
 export const RequirementItem: React.FunctionComponent<{ isMissing: boolean }> = ({
   isMissing,
@@ -189,7 +190,7 @@ xpack.security.authc.api_key.enabled: true`}
           <EuiSpacer size="l" />
           <FormattedMessage
             id="xpack.ingestManager.setupPage.missingRequirementsKibanaTitle"
-            defaultMessage="In your PRISM Analytics policy, enable:" // DERBY Sanitized
+            defaultMessage={`In your ${prismAppName} policy, enable:`} // DERBY Sanitized
           />
           <EuiSpacer size="l" />
           <RequirementItem isMissing={missingRequirements.includes('tls_required')}>
@@ -205,7 +206,7 @@ xpack.security.authc.api_key.enabled: true`}
                   >
                     <FormattedMessage
                       id="xpack.ingestManager.setupPage.kibanaSecurityLink"
-                      defaultMessage="PRISM Analytics security" // DERBY Sanitized
+                      defaultMessage={`${prismAppName} security`} // DERBY Sanitized
                     />
                   </EuiLink>
                 ),
@@ -245,7 +246,7 @@ xpack.security.authc.api_key.enabled: true`}
                   >
                     <FormattedMessage
                       id="xpack.ingestManager.setupPage.kibanaEncryptionLink"
-                      defaultMessage="PRISM Analytics encryption key" // DERBY Sanitized
+                      defaultMessage={`${prismAppName} encryption key`} // DERBY Sanitized
                     />
                   </EuiLink>
                 ),

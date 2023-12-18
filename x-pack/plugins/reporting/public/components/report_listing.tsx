@@ -35,6 +35,7 @@ import {
   ReportInfoButton,
 } from './buttons';
 import { ReportDiagnostic } from './report_diagnostic';
+import { prismAppName } from '../../../../derby/constants';
 
 export interface Job {
   id: string;
@@ -154,7 +155,7 @@ class ReportListingUi extends Component<Props, State> {
                 <p>
                   <FormattedMessage
                     id="xpack.reporting.listing.reports.subtitle"
-                    defaultMessage="Get reports generated in PRISM Analytics applications." // DERBY Sanitized
+                    defaultMessage={`Get reports generated in ${prismAppName} applications.`} // DERBY Sanitized
                   />
                 </p>
               </EuiText>

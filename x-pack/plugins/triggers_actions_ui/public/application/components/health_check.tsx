@@ -18,6 +18,7 @@ import { EuiEmptyPrompt, EuiCode } from '@elastic/eui';
 import { AlertingFrameworkHealth } from '../../types';
 import { health } from '../lib/alert_api';
 import './health_check.scss';
+import { prismAppName } from '../../../../../derby/constants';
 
 interface Props {
   docLinks: Pick<DocLinksStart, 'ELASTIC_WEBSITE_URL' | 'DOC_LINK_VERSION'>;
@@ -181,8 +182,7 @@ const TlsError = ({
       <div className={`${className}__body`}>
         <p role="banner">
           {i18n.translate('xpack.triggersActionsUI.components.healthCheck.tlsError', {
-            defaultMessage:
-              'Alerting relies on API keys, which require TLS between the database and PRISM Analytics. ', // DERBY Sanitized
+            defaultMessage: `Alerting relies on API keys, which require TLS between the database and ${prismAppName}. `, // DERBY Sanitized
           })}
           <EuiLink
             href={`${ELASTIC_WEBSITE_URL}guide/en/kibana/${DOC_LINK_VERSION}/configuring-tls.html`}

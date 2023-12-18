@@ -25,6 +25,7 @@ import { FormattedMessage } from '@kbn/i18n/react';
 
 import { useKibana } from '../../../../../../../plugins/kibana_react/public';
 import { IndexPatternManagmentContext } from '../../../../types';
+import { prismAppName } from '../../../../derby/constants';
 
 export interface ScriptingWarningCallOutProps {
   isVisible: boolean;
@@ -76,9 +77,9 @@ export const ScriptingWarningCallOut = ({ isVisible = false }: ScriptingWarningC
         <p>
           <FormattedMessage
             id="indexPatternManagement.warningCallOut.descriptionLabel"
-            defaultMessage="Scripted fields can be used to display and aggregate calculated values. As such, they can be very slow, and
-            if done incorrectly, can cause PRISM Analytics to be unusable. There's no safety net here. If you make a typo, unexpected exceptions
-            will be thrown all over the place!" // DERBY Sanitized
+            defaultMessage={`Scripted fields can be used to display and aggregate calculated values. As such, they can be very slow, and
+            if done incorrectly, can cause ${prismAppName} to be unusable. There's no safety net here. If you make a typo, unexpected exceptions
+            will be thrown all over the place!`} // DERBY Sanitized
           />
         </p>
       </EuiCallOut>

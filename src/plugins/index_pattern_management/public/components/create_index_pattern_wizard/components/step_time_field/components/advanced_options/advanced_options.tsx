@@ -23,6 +23,7 @@ import { EuiForm, EuiFormRow, EuiFieldText, EuiButtonEmpty, EuiSpacer } from '@e
 
 import { i18n } from '@kbn/i18n';
 import { FormattedMessage } from '@kbn/i18n/react';
+import { prismAppName } from '../../../../../../derby/constants';
 
 interface AdvancedOptionsProps {
   isVisible: boolean;
@@ -67,8 +68,8 @@ export const AdvancedOptions: React.FC<AdvancedOptionsProps> = ({
           helpText={
             <FormattedMessage
               id="indexPatternManagement.createIndexPattern.stepTime.options.patternLabel"
-              defaultMessage="PRISM Analytics will provide a unique identifier for each index pattern. If you do not want to use this unique ID,
-            enter a custom one." // DERBY sanitized
+              defaultMessage={`${prismAppName} will provide a unique identifier for each index pattern. If you do not want to use this unique ID,
+            enter a custom one.`} // DERBY sanitized
             />
           }
         >

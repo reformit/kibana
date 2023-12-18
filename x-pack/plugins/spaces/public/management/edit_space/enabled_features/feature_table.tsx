@@ -27,6 +27,7 @@ import { KibanaFeatureConfig } from '../../../../../../plugins/features/public';
 import { Space } from '../../../../common/model/space';
 import { getEnabledFeatures } from '../../lib/feature_utils';
 import './feature_table.scss';
+import { prismAppName } from '../../../../../../derby/constants';
 
 interface Props {
   space: Partial<Space>;
@@ -108,7 +109,7 @@ export class FeatureTable extends Component<Props, {}> {
           <EuiFlexItem grow={1}>
             <EuiTitle size="xs">
               <h4 className="eui-displayInlineBlock">
-                {category.id !== 'kibana' ? category.label : 'PRISM Analytics'}
+                {category.id !== 'kibana' ? category.label : prismAppName}
               </h4>
             </EuiTitle>
           </EuiFlexItem>

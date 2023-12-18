@@ -14,6 +14,7 @@ import { SetupGuide as SetupGuideLayout } from '../../../shared/setup_guide';
 import { SetAppSearchChrome as SetPageChrome } from '../../../shared/kibana_chrome';
 import { SendAppSearchTelemetry as SendTelemetry } from '../../../shared/telemetry';
 import GettingStarted from './assets/getting_started.png';
+import { prismAppName } from '../../../../../../../derby/constants';
 
 export const SetupGuide: React.FC = () => (
   <SetupGuideLayout
@@ -61,7 +62,7 @@ export const SetupGuide: React.FC = () => (
       <p>
         <FormattedMessage
           id="xpack.enterpriseSearch.appSearch.setupGuide.notConfigured"
-          defaultMessage="App Search is not configured in your PRISM Analytics instance yet."
+          defaultMessage={`App Search is not configured in your ${prismAppName} instance yet.`} // DERBY Sanitized
         />
       </p>
     </EuiText>

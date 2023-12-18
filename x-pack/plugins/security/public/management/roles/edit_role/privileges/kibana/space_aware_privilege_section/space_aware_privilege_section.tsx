@@ -25,6 +25,7 @@ import { PrivilegeSpaceForm } from './privilege_space_form';
 import { PrivilegeFormCalculator } from '../privilege_form_calculator';
 import { PrivilegeSummary } from '../privilege_summary';
 import { KibanaPrivileges } from '../../../../model';
+import { prismAppName } from '../../../../../../../../../derby/constants';
 
 interface Props {
   kibanaPrivileges: KibanaPrivileges;
@@ -170,7 +171,7 @@ export class SpaceAwarePrivilegeSection extends Component<Props, State> {
           <h2>
             <FormattedMessage
               id="xpack.security.management.editRole.spacePrivilegeSection.noAccessToKibanaTitle"
-              defaultMessage="This role does not grant access to PRISM Analytics" // DERBY Sanitized
+              defaultMessage={`This role does not grant access to ${prismAppName}`} // DERBY Sanitized
             />
           </h2>
         }
@@ -198,7 +199,7 @@ export class SpaceAwarePrivilegeSection extends Component<Props, State> {
       >
         <FormattedMessage
           id="xpack.security.management.editRole.spacePrivilegeSection.addSpacePrivilegeButton"
-          defaultMessage="Add PRISM Analytics privilege" // DERBY Sanitized
+          defaultMessage={`Add ${prismAppName} privilege`} // DERBY Sanitized
         />
       </EuiButton>
     );

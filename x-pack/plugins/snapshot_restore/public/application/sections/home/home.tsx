@@ -30,6 +30,7 @@ import { SnapshotList } from './snapshot_list';
 import { RestoreList } from './restore_list';
 import { PolicyList } from './policy_list';
 import { documentationLinksService } from '../../services/documentation';
+import { prismAppName } from '../../../../../../derby/constants';
 
 interface MatchParams {
   section: Section;
@@ -131,7 +132,7 @@ export const SnapshotRestoreHome: React.FunctionComponent<RouteComponentProps<Ma
           <EuiText color="subdued">
             <FormattedMessage
               id="xpack.snapshotRestore.home.snapshotRestoreDescription"
-              defaultMessage="Use repositories to store and recover backups of your PRISM Analytics indices and clusters." // DERBY Sanitized
+              defaultMessage={`Use repositories to store and recover backups of your ${prismAppName} indices and clusters.`} // DERBY Sanitized
             />
           </EuiText>
         </EuiTitle>

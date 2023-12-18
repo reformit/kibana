@@ -22,6 +22,7 @@ import { i18n } from '@kbn/i18n';
 import React from 'react';
 import { CoreStart } from 'kibana/public';
 import { toMountPoint } from '../../../../kibana_react/public';
+import { prismAppName } from '../../derby/constants';
 
 let bannerId: string;
 
@@ -39,8 +40,7 @@ export const onRedirectNoIndexPattern = (
   }
 
   const bannerMessage = i18n.translate('data.indexPatterns.ensureDefaultIndexPattern.bannerLabel', {
-    defaultMessage:
-      'To visualize and explore data in Kibana, you must create an index pattern to retrieve data from Elasticsearch.',
+    defaultMessage: `To visualize and explore data in ${prismAppName}, you must create an index pattern to retrieve data from the database.`, // DERBY Sanitized
   });
 
   // Avoid being hostile to new users who don't have an index pattern setup yet
