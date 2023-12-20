@@ -23,7 +23,7 @@ import { EuiForm, EuiFormRow, EuiFieldText, EuiButtonEmpty, EuiSpacer } from '@e
 
 import { i18n } from '@kbn/i18n';
 import { FormattedMessage } from '@kbn/i18n/react';
-import { prismAppName } from '../../../../../../derby/constants';
+import { prismAppName } from '../../../../../../../../derby/constants';
 
 interface AdvancedOptionsProps {
   isVisible: boolean;

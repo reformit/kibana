@@ -33,7 +33,7 @@ import {
   EuiSpacer,
   EuiCallOut,
 } from '@elastic/eui';
-import { prismAppName } from '../../../derby/constants';
+import { prismAppName } from '../../../../../derby/constants';
 
 class SavedObjectsInstallerUi extends React.Component {
   DEFAULT_BUTTON_LABEL = this.props.intl.formatMessage({

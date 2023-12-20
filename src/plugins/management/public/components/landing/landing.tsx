@@ -28,7 +28,7 @@ import {
   EuiText,
   EuiTitle,
 } from '@elastic/eui';
-import { prismAppName } from '../../derby/constants';
+import { prismAppName } from '../../../../derby/constants';
 
 interface ManagementLandingPageProps {
   version: string;

@@ -19,7 +19,7 @@
 
 import { i18n } from '@kbn/i18n';
 import { ManagementSectionId } from '../types';
-import { prismAppName } from '../derby/constants';
+import { prismAppName } from '../../../derby/constants';
 
 const ingestTitle = i18n.translate('management.sections.ingestTitle', {
   defaultMessage: 'Ingest',

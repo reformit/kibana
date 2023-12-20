@@ -35,7 +35,6 @@ import {
   EuiSelect,
   EuiFlexGroup,
   EuiFlexItem,
-  EuiLoadingElastic,
   EuiCallOut,
   EuiSpacer,
   EuiLink,
@@ -68,7 +67,7 @@ import { OverwriteModal } from './overwrite_modal';
 import { ImportModeControl, ImportMode } from './import_mode_control';
 import { ImportSummary } from './import_summary';
 import '../../../../../../../scss/derby_styles.scss';
-import { prismAnalyticsIcon, prismAppName } from '../../../derby/constants';
+import { prismAnalyticsIcon, prismAppName } from '../../../../../derby/constants';
 
 const CREATE_NEW_COPIES_DEFAULT = false;
 const OVERWRITE_ALL_DEFAULT = true;

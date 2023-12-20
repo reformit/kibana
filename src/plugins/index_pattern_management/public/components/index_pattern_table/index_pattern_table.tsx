@@ -43,7 +43,7 @@ import { EmptyState } from './empty_state';
 import { MatchedItem, ResolveIndexResponseItemAlias } from '../create_index_pattern_wizard/types';
 import { EmptyIndexPatternPrompt } from './empty_index_pattern_prompt';
 import { getIndices } from '../create_index_pattern_wizard/lib';
-import { prismAppName } from '../../derby/constants';
+import { prismAppName } from '../../../../derby/constants';
 
 const pagination = {
   initialPageSize: 10,

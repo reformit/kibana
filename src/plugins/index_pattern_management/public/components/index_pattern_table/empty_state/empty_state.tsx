@@ -40,7 +40,7 @@ import {
 import { useHistory } from 'react-router-dom';
 import { reactRouterNavigate } from '../../../../../../plugins/kibana_react/public';
 import { MlCardState } from '../../../types';
-import { prismAppName } from '../../../derby/constants';
+import { prismAppName } from '../../../../../derby/constants';
 
 export const EmptyState = ({
   onRefresh,

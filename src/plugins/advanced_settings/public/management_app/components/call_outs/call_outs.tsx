@@ -21,7 +21,7 @@ import React from 'react';
 
 import { EuiCallOut } from '@elastic/eui';
 import { FormattedMessage } from '@kbn/i18n/react';
-import { prismAppName } from '../../../derby/constants';
+import { prismAppName } from '../../../../../../plugins/derby/constants';
 
 export const CallOuts = () => {
   return (

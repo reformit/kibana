@@ -22,7 +22,7 @@ import { i18n } from '@kbn/i18n';
 import React from 'react';
 import { CoreStart } from 'kibana/public';
 import { toMountPoint } from '../../../../kibana_react/public';
-import { prismAppName } from '../../derby/constants';
+import { prismAppName } from '../../../../derby/constants';
 
 let bannerId: string;
 

@@ -25,7 +25,7 @@ import { FormattedMessage } from '@kbn/i18n/react';
 
 import { useKibana } from '../../../../../../../plugins/kibana_react/public';
 import { IndexPatternManagmentContext } from '../../../../types';
-import { prismAppName } from '../../../../derby/constants';
+import { prismAppName } from '../../../../../../derby/constants';
 
 export interface ScriptingWarningCallOutProps {
   isVisible: boolean;
